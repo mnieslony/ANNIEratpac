@@ -35,7 +35,11 @@ G4VPhysicalVolume *GeoAnnieInnerStructureFactory::Construct(DBLinkPtr table) {
     vector<G4double> inner_structure_center = InnerStructureinfo->GetDArray("inner_structure_center"); // InnerStructure center
     G4int enable_structure = InnerStructureinfo->GetI("enable_structure"); // InnerStructure center
     G4String gdml_file = InnerStructureinfo->GetS("gdml_file");
+    
+    G4double rot_angle = InnerStructureinfo->GetD("rotation_angle");
     G4ThreeVector StructureCenter(inner_structure_center[0],inner_structure_center[1],inner_structure_center[2]);  
+    G4RotationMatrix* rotm = new G4RotationMatrix();
+    rotm->rotateZ(rot_angle*CLHEP::deg);
     
     // Get structure from GDML file
     G4VPhysicalVolume* innerstructure_phys;
@@ -48,7 +52,7 @@ G4VPhysicalVolume *GeoAnnieInnerStructureFactory::Construct(DBLinkPtr table) {
       innerstructure_phys = parser.GetWorldVolume();
       
       innerstructure_log = innerstructure_phys->GetLogicalVolume();
-      innerstructure_phys_placement = new G4PVPlacement(NULL, StructureCenter, innerstructure_log, "innerstructure_phys", motherLog, false, 0, false);
+      innerstructure_phys_placement = new G4PVPlacement(rotm, StructureCenter, innerstructure_log, "innerstructure_phys", motherLog, false, 0, false);
       
       innerstructure_log->SetVisAttributes(G4Color(0.1,0.,1.0,1));
     }

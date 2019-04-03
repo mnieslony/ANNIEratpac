@@ -63,19 +63,19 @@ G4VPhysicalVolume* DetectorConstruction::Construct() {
       string geo_file = ldetector->GetS("geo_file");
       info << "Loading detector geometry from " << geo_file << newline;
       if (db->Load(geo_file) == 0) {
-        Log::Die("DetectorConstruction: Could not open detector geometry");
+	Log::Die("DetectorConstruction: Could not open detector geometry");
       }
     } catch (DBNotFoundError &_e) {
-	try {
+      try {
 	gdml_file = ldetector->GetS("gdml_file");
 	info << "Loading detector geometry from " << gdml_file << newline;
 	from_gdml = true;
-	  } catch (DBNotFoundError &__e) {
-	    Log::Die("DetectorConstruction: Could not open geo_file or detector_factory or gdml_file");
+      } catch (DBNotFoundError &__e) {
+	Log::Die("DetectorConstruction: Could not open geo_file or detector_factory or gdml_file");
       }
     }
   }
-
+  
   info << "Constructing detector materials...\n";
   ConstructMaterials();
 

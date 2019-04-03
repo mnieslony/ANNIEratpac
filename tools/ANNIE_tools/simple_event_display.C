@@ -160,6 +160,7 @@ void simple_event_display(const char* filename, ULong64_t entry) {
       hit_position.SetXYZ(ds->GetMC()->GetMCPMT(iPMT)->GetMCPhoton(iPhot)->GetPosition().X(),
 			  ds->GetMC()->GetMCPMT(iPMT)->GetMCPhoton(iPhot)->GetPosition().Y(),
 			  ds->GetMC()->GetMCPMT(iPMT)->GetMCPhoton(iPhot)->GetPosition().Z());
+      cout << pmtInfo->GetPosition(ds->GetMC()->GetMCPMT(iPMT)->GetID()).X() << " " <<  pmtInfo->GetPosition(ds->GetMC()->GetMCPMT(iPMT)->GetID()).Y() << " " << pmtInfo->GetPosition(ds->GetMC()->GetMCPMT(iPMT)->GetID()).Z() << endl;
       sensor_position.SetXYZ(pmtInfo->GetPosition(ds->GetMC()->GetMCPMT(iPMT)->GetID()).X(), 
 			     pmtInfo->GetPosition(ds->GetMC()->GetMCPMT(iPMT)->GetID()).Y(), 
 			     pmtInfo->GetPosition(ds->GetMC()->GetMCPMT(iPMT)->GetID()).Z());

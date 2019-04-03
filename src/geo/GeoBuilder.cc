@@ -32,6 +32,7 @@
 #include <RAT/GeoCutTubeFactory.hh>
 #include <RAT/GeoWatchmanShieldFactory.hh>
 #include <RAT/GeoAnnieNCVFactory.hh>
+#include <RAT/GeoAnnieInnerStructureFactory.hh>
 
 using namespace std;
 
@@ -66,6 +67,7 @@ GeoBuilder::GeoBuilder()
   new GeoCutTubeFactory();
   new GeoWatchmanShieldFactory();
   new GeoAnnieNCVFactory();
+  new GeoAnnieInnerStructureFactory();
 
   // Register standard waveguides
   GlobalFactory<WaveguideFactory>::Register("cone",

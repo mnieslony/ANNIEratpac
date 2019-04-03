@@ -15,7 +15,6 @@
 #include <G4OpticalSurface.hh>
 #include <G4LogicalBorderSurface.hh>
 #include <CLHEP/Units/SystemOfUnits.h>
-
 #include <vector>
 
 using namespace std;
@@ -36,6 +35,7 @@ G4VPhysicalVolume *GeoAnnieNCVFactory::Construct(DBLinkPtr table) {
     G4double ncv_center_x = ncv_center[0]; 
     G4double ncv_center_y = ncv_center[1];
     G4double ncv_center_z = ncv_center[2];
+    
 
 //     G4Material *frameMaterial = G4Material::GetMaterial(NCVinfo->GetS("frame_material")); // frame material
 //     G4Material *ncvMaterial = G4Material::GetMaterial(NCVinfo->GetS("ncv_material")); // ncv material
