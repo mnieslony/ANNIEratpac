@@ -65,7 +65,7 @@ type: "tube",
 r_max: 1517.6,
 size_z: 1974.8,
 position: [0.0, 0.0, 0.0],
-material: "pvc",
+material: "pvc_white",
 color: [1.0, 0.5, 0.5, 0.1],
 invisible: 1,
 drawstyle: "solid"

@@ -34,7 +34,7 @@ def print_scint_paddle_geometry(volume_name, pos_x, pos_y, pos_z, size_x, size_y
   print "size: [%s, %s, %s], // mm, half-length" % (round(size_x,1), round(size_y,1), round(size_z,1))
   print "position: [%s, %s, %s]," % (round(pos_x,1), round(pos_y,1), round(pos_z,1))
   print "color: [0.2, 0.8, 0.2, 0.5],"
-  print "material: \"plastic_scint\","
+  print "material: \"polystyrene\","
   print "}"
   
 # function to write a steel plate geometry

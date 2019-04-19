@@ -11,7 +11,7 @@ type: "box",
 size: [1610.0, 155.0, 12.7], // mm, half-length
 position: [0.0, -4095.0, -2832.3],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -23,7 +23,7 @@ type: "box",
 size: [1610.0, 155.0, 12.7], // mm, half-length
 position: [0.0, -4085.0, -2806.9],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -35,7 +35,7 @@ type: "box",
 size: [1610.0, 155.0, 12.7], // mm, half-length
 position: [0.0, -3785.0, -2832.3],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -47,7 +47,7 @@ type: "box",
 size: [1610.0, 155.0, 12.7], // mm, half-length
 position: [0.0, -3775.0, -2806.9],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -59,7 +59,7 @@ type: "box",
 size: [1610.0, 155.0, 12.7], // mm, half-length
 position: [0.0, -3475.0, -2832.3],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -71,7 +71,7 @@ type: "box",
 size: [1610.0, 155.0, 12.7], // mm, half-length
 position: [0.0, -3465.0, -2806.9],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -83,7 +83,7 @@ type: "box",
 size: [1610.0, 155.0, 12.7], // mm, half-length
 position: [0.0, -3165.0, -2832.3],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -95,7 +95,7 @@ type: "box",
 size: [1610.0, 155.0, 12.7], // mm, half-length
 position: [0.0, -3155.0, -2806.9],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -107,7 +107,7 @@ type: "box",
 size: [1610.0, 155.0, 12.7], // mm, half-length
 position: [0.0, -2855.0, -2832.3],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -119,7 +119,7 @@ type: "box",
 size: [1610.0, 155.0, 12.7], // mm, half-length
 position: [0.0, -2845.0, -2806.9],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -131,7 +131,7 @@ type: "box",
 size: [1610.0, 155.0, 12.7], // mm, half-length
 position: [0.0, -2545.0, -2832.3],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -143,7 +143,7 @@ type: "box",
 size: [1610.0, 155.0, 12.7], // mm, half-length
 position: [0.0, -2535.0, -2806.9],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -155,7 +155,7 @@ type: "box",
 size: [1610.0, 155.0, 12.7], // mm, half-length
 position: [0.0, -2235.0, -2832.3],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -167,7 +167,7 @@ type: "box",
 size: [1610.0, 155.0, 12.7], // mm, half-length
 position: [0.0, -2225.0, -2806.9],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -179,7 +179,7 @@ type: "box",
 size: [1610.0, 155.0, 12.7], // mm, half-length
 position: [0.0, -1925.0, -2832.3],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -191,7 +191,7 @@ type: "box",
 size: [1610.0, 155.0, 12.7], // mm, half-length
 position: [0.0, -1915.0, -2806.9],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -203,7 +203,7 @@ type: "box",
 size: [1610.0, 155.0, 12.7], // mm, half-length
 position: [0.0, -1615.0, -2832.3],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -215,7 +215,7 @@ type: "box",
 size: [1610.0, 155.0, 12.7], // mm, half-length
 position: [0.0, -1605.0, -2806.9],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -227,7 +227,7 @@ type: "box",
 size: [1610.0, 155.0, 12.7], // mm, half-length
 position: [0.0, -1305.0, -2832.3],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -239,7 +239,7 @@ type: "box",
 size: [1610.0, 155.0, 12.7], // mm, half-length
 position: [0.0, -1295.0, -2806.9],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -251,7 +251,7 @@ type: "box",
 size: [1610.0, 155.0, 12.7], // mm, half-length
 position: [0.0, -995.0, -2832.3],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -263,7 +263,7 @@ type: "box",
 size: [1610.0, 155.0, 12.7], // mm, half-length
 position: [0.0, -985.0, -2806.9],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -275,7 +275,7 @@ type: "box",
 size: [1610.0, 155.0, 12.7], // mm, half-length
 position: [0.0, -685.0, -2832.3],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -287,7 +287,7 @@ type: "box",
 size: [1610.0, 155.0, 12.7], // mm, half-length
 position: [0.0, -675.0, -2806.9],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -299,7 +299,7 @@ type: "box",
 size: [1610.0, 155.0, 12.7], // mm, half-length
 position: [0.0, -375.0, -2832.3],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -311,7 +311,7 @@ type: "box",
 size: [1610.0, 155.0, 12.7], // mm, half-length
 position: [0.0, -365.0, -2806.9],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 
 
@@ -341,7 +341,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -3435.0, 707.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -353,7 +353,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -3435.0, 707.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -365,7 +365,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -3235.0, 707.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -377,7 +377,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -3235.0, 707.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -389,7 +389,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -3035.0, 707.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -401,7 +401,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -3035.0, 707.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -413,7 +413,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -2835.0, 707.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -425,7 +425,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -2835.0, 707.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -437,7 +437,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -2635.0, 707.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -449,7 +449,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -2635.0, 707.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -461,7 +461,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -2435.0, 707.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -473,7 +473,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -2435.0, 707.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -485,7 +485,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -2235.0, 707.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -497,7 +497,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -2235.0, 707.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -509,7 +509,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -2035.0, 707.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -521,7 +521,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -2035.0, 707.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -533,7 +533,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -1835.0, 707.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -545,7 +545,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -1835.0, 707.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -557,7 +557,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -1635.0, 707.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -569,7 +569,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -1635.0, 707.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -581,7 +581,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -1435.0, 707.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -593,7 +593,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -1435.0, 707.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -605,7 +605,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -1235.0, 707.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -617,7 +617,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -1235.0, 707.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -629,7 +629,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -1035.0, 707.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -641,7 +641,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -1035.0, 707.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -665,7 +665,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [-1050.0, -2925.0, 819.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -677,7 +677,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [-1050.0, -1545.0, 819.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -689,7 +689,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [-900.0, -2925.0, 819.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -701,7 +701,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [-900.0, -1545.0, 819.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -713,7 +713,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [-750.0, -2925.0, 819.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -725,7 +725,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [-750.0, -1545.0, 819.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -737,7 +737,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [-600.0, -2925.0, 819.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -749,7 +749,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [-600.0, -1545.0, 819.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -761,7 +761,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [-450.0, -2925.0, 819.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -773,7 +773,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [-450.0, -1545.0, 819.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -785,7 +785,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [-300.0, -2925.0, 819.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -797,7 +797,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [-300.0, -1545.0, 819.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -809,7 +809,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [-150.0, -2925.0, 819.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -821,7 +821,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [-150.0, -1545.0, 819.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -833,7 +833,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [0.0, -2925.0, 819.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -845,7 +845,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [0.0, -1545.0, 819.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -857,7 +857,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [150.0, -2925.0, 819.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -869,7 +869,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [150.0, -1545.0, 819.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -881,7 +881,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [300.0, -2925.0, 819.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -893,7 +893,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [300.0, -1545.0, 819.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -905,7 +905,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [450.0, -2925.0, 819.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -917,7 +917,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [450.0, -1545.0, 819.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -929,7 +929,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [600.0, -2925.0, 819.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -941,7 +941,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [600.0, -1545.0, 819.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -953,7 +953,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [750.0, -2925.0, 819.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -965,7 +965,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [750.0, -1545.0, 819.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -977,7 +977,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [900.0, -2925.0, 819.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -989,7 +989,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [900.0, -1545.0, 819.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1001,7 +1001,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [1050.0, -2925.0, 819.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1013,7 +1013,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [1050.0, -1545.0, 819.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1037,7 +1037,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -3435.0, 930.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1049,7 +1049,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -3435.0, 930.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1061,7 +1061,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -3235.0, 930.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1073,7 +1073,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -3235.0, 930.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1085,7 +1085,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -3035.0, 930.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1097,7 +1097,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -3035.0, 930.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1109,7 +1109,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -2835.0, 930.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1121,7 +1121,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -2835.0, 930.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1133,7 +1133,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -2635.0, 930.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1145,7 +1145,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -2635.0, 930.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1157,7 +1157,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -2435.0, 930.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1169,7 +1169,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -2435.0, 930.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1181,7 +1181,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -2235.0, 930.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1193,7 +1193,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -2235.0, 930.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1205,7 +1205,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -2035.0, 930.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1217,7 +1217,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -2035.0, 930.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1229,7 +1229,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -1835.0, 930.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1241,7 +1241,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -1835.0, 930.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1253,7 +1253,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -1635.0, 930.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1265,7 +1265,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -1635.0, 930.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1277,7 +1277,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -1435.0, 930.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1289,7 +1289,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -1435.0, 930.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1301,7 +1301,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -1235.0, 930.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1313,7 +1313,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -1235.0, 930.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1325,7 +1325,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -1035.0, 930.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1337,7 +1337,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -1035.0, 930.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1361,7 +1361,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [-1200.0, -2925.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1373,7 +1373,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [-1200.0, -1545.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1385,7 +1385,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [-1050.0, -2925.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1397,7 +1397,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [-1050.0, -1545.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1409,7 +1409,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [-900.0, -2925.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1421,7 +1421,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [-900.0, -1545.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1433,7 +1433,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [-750.0, -2925.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1445,7 +1445,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [-750.0, -1545.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1457,7 +1457,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [-600.0, -2925.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1469,7 +1469,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [-600.0, -1545.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1481,7 +1481,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [-450.0, -2925.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1493,7 +1493,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [-450.0, -1545.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1505,7 +1505,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [-300.0, -2925.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1517,7 +1517,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [-300.0, -1545.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1529,7 +1529,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [-150.0, -2925.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1541,7 +1541,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [-150.0, -1545.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1553,7 +1553,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [0.0, -2925.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1565,7 +1565,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [0.0, -1545.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1577,7 +1577,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [150.0, -2925.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1589,7 +1589,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [150.0, -1545.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1601,7 +1601,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [300.0, -2925.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1613,7 +1613,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [300.0, -1545.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1625,7 +1625,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [450.0, -2925.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1637,7 +1637,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [450.0, -1545.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1649,7 +1649,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [600.0, -2925.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1661,7 +1661,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [600.0, -1545.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1673,7 +1673,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [750.0, -2925.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1685,7 +1685,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [750.0, -1545.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1697,7 +1697,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [900.0, -2925.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1709,7 +1709,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [900.0, -1545.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1721,7 +1721,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [1050.0, -2925.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1733,7 +1733,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [1050.0, -1545.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1745,7 +1745,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [1200.0, -2925.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1757,7 +1757,7 @@ type: "box",
 size: [75.0, 690.0, 7.0], // mm, half-length
 position: [1200.0, -1545.0, 1024.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1781,7 +1781,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -3435.0, 1135.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1793,7 +1793,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -3435.0, 1135.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1805,7 +1805,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -3235.0, 1135.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1817,7 +1817,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -3235.0, 1135.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1829,7 +1829,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -3035.0, 1135.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1841,7 +1841,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -3035.0, 1135.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1853,7 +1853,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -2835.0, 1135.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1865,7 +1865,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -2835.0, 1135.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1877,7 +1877,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -2635.0, 1135.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1889,7 +1889,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -2635.0, 1135.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1901,7 +1901,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -2435.0, 1135.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1913,7 +1913,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -2435.0, 1135.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1925,7 +1925,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -2235.0, 1135.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1937,7 +1937,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -2235.0, 1135.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1949,7 +1949,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -2035.0, 1135.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1961,7 +1961,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -2035.0, 1135.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1973,7 +1973,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -1835.0, 1135.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1985,7 +1985,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -1835.0, 1135.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -1997,7 +1997,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -1635.0, 1135.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2009,7 +2009,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -1635.0, 1135.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2021,7 +2021,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -1435.0, 1135.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2033,7 +2033,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -1435.0, 1135.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2045,7 +2045,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -1235.0, 1135.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2057,7 +2057,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -1235.0, 1135.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2069,7 +2069,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -1035.0, 1135.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2081,7 +2081,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -1035.0, 1135.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2105,7 +2105,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-1200.0, -2925.0, 1222.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2117,7 +2117,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-1200.0, -1545.0, 1222.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2129,7 +2129,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-1000.0, -2925.0, 1222.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2141,7 +2141,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-1000.0, -1545.0, 1222.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2153,7 +2153,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-800.0, -2925.0, 1222.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2165,7 +2165,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-800.0, -1545.0, 1222.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2177,7 +2177,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-600.0, -2925.0, 1222.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2189,7 +2189,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-600.0, -1545.0, 1222.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2201,7 +2201,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-400.0, -2925.0, 1222.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2213,7 +2213,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-400.0, -1545.0, 1222.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2225,7 +2225,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-200.0, -2925.0, 1222.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2237,7 +2237,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-200.0, -1545.0, 1222.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2249,7 +2249,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [0.0, -2925.0, 1222.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2261,7 +2261,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [0.0, -1545.0, 1222.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2273,7 +2273,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [200.0, -2925.0, 1222.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2285,7 +2285,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [200.0, -1545.0, 1222.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2297,7 +2297,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [400.0, -2925.0, 1222.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2309,7 +2309,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [400.0, -1545.0, 1222.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2321,7 +2321,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [600.0, -2925.0, 1222.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2333,7 +2333,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [600.0, -1545.0, 1222.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2345,7 +2345,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [800.0, -2925.0, 1222.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2357,7 +2357,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [800.0, -1545.0, 1222.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2369,7 +2369,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [1000.0, -2925.0, 1222.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2381,7 +2381,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [1000.0, -1545.0, 1222.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2393,7 +2393,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [1200.0, -2925.0, 1222.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2405,7 +2405,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [1200.0, -1545.0, 1222.8],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2429,7 +2429,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -3435.0, 1331.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2441,7 +2441,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -3435.0, 1331.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2453,7 +2453,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -3235.0, 1331.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2465,7 +2465,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -3235.0, 1331.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2477,7 +2477,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -3035.0, 1331.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2489,7 +2489,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -3035.0, 1331.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2501,7 +2501,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -2835.0, 1331.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2513,7 +2513,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -2835.0, 1331.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2525,7 +2525,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -2635.0, 1331.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2537,7 +2537,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -2635.0, 1331.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2549,7 +2549,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -2435.0, 1331.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2561,7 +2561,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -2435.0, 1331.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2573,7 +2573,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -2235.0, 1331.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2585,7 +2585,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -2235.0, 1331.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2597,7 +2597,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -2035.0, 1331.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2609,7 +2609,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -2035.0, 1331.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2621,7 +2621,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -1835.0, 1331.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2633,7 +2633,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -1835.0, 1331.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2645,7 +2645,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -1635.0, 1331.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2657,7 +2657,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -1635.0, 1331.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2669,7 +2669,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -1435.0, 1331.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2681,7 +2681,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -1435.0, 1331.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2693,7 +2693,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -1235.0, 1331.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2705,7 +2705,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -1235.0, 1331.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2717,7 +2717,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -1035.0, 1331.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2729,7 +2729,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -1035.0, 1331.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2753,7 +2753,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-1400.0, -2925.0, 1418.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2765,7 +2765,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-1400.0, -1545.0, 1418.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2777,7 +2777,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-1200.0, -2925.0, 1418.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2789,7 +2789,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-1200.0, -1545.0, 1418.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2801,7 +2801,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-1000.0, -2925.0, 1418.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2813,7 +2813,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-1000.0, -1545.0, 1418.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2825,7 +2825,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-800.0, -2925.0, 1418.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2837,7 +2837,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-800.0, -1545.0, 1418.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2849,7 +2849,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-600.0, -2925.0, 1418.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2861,7 +2861,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-600.0, -1545.0, 1418.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2873,7 +2873,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-400.0, -2925.0, 1418.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2885,7 +2885,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-400.0, -1545.0, 1418.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2897,7 +2897,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-200.0, -2925.0, 1418.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2909,7 +2909,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-200.0, -1545.0, 1418.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2921,7 +2921,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [0.0, -2925.0, 1418.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2933,7 +2933,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [0.0, -1545.0, 1418.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2945,7 +2945,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [200.0, -2925.0, 1418.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2957,7 +2957,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [200.0, -1545.0, 1418.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2969,7 +2969,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [400.0, -2925.0, 1418.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2981,7 +2981,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [400.0, -1545.0, 1418.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -2993,7 +2993,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [600.0, -2925.0, 1418.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3005,7 +3005,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [600.0, -1545.0, 1418.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3017,7 +3017,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [800.0, -2925.0, 1418.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3029,7 +3029,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [800.0, -1545.0, 1418.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3041,7 +3041,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [1000.0, -2925.0, 1418.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3053,7 +3053,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [1000.0, -1545.0, 1418.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3065,7 +3065,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [1200.0, -2925.0, 1418.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3077,7 +3077,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [1200.0, -1545.0, 1418.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3089,7 +3089,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [1400.0, -2925.0, 1418.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3101,7 +3101,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [1400.0, -1545.0, 1418.6],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3125,7 +3125,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -3435.0, 1527.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3137,7 +3137,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -3435.0, 1527.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3149,7 +3149,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -3235.0, 1527.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3161,7 +3161,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -3235.0, 1527.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3173,7 +3173,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -3035.0, 1527.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3185,7 +3185,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -3035.0, 1527.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3197,7 +3197,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -2835.0, 1527.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3209,7 +3209,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -2835.0, 1527.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3221,7 +3221,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -2635.0, 1527.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3233,7 +3233,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -2635.0, 1527.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3245,7 +3245,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -2435.0, 1527.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3257,7 +3257,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -2435.0, 1527.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3269,7 +3269,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -2235.0, 1527.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3281,7 +3281,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -2235.0, 1527.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3293,7 +3293,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -2035.0, 1527.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3305,7 +3305,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -2035.0, 1527.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3317,7 +3317,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -1835.0, 1527.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3329,7 +3329,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -1835.0, 1527.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3341,7 +3341,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -1635.0, 1527.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3353,7 +3353,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -1635.0, 1527.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3365,7 +3365,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -1435.0, 1527.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3377,7 +3377,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -1435.0, 1527.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3389,7 +3389,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -1235.0, 1527.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3401,7 +3401,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -1235.0, 1527.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3413,7 +3413,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -1035.0, 1527.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3425,7 +3425,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -1035.0, 1527.2],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3449,7 +3449,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-1400.0, -2925.0, 1614.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3461,7 +3461,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-1400.0, -1545.0, 1614.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3473,7 +3473,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-1200.0, -2925.0, 1614.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3485,7 +3485,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-1200.0, -1545.0, 1614.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3497,7 +3497,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-1000.0, -2925.0, 1614.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3509,7 +3509,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-1000.0, -1545.0, 1614.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3521,7 +3521,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-800.0, -2925.0, 1614.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3533,7 +3533,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-800.0, -1545.0, 1614.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3545,7 +3545,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-600.0, -2925.0, 1614.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3557,7 +3557,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-600.0, -1545.0, 1614.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3569,7 +3569,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-400.0, -2925.0, 1614.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3581,7 +3581,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-400.0, -1545.0, 1614.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3593,7 +3593,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-200.0, -2925.0, 1614.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3605,7 +3605,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [-200.0, -1545.0, 1614.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3617,7 +3617,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [0.0, -2925.0, 1614.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3629,7 +3629,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [0.0, -1545.0, 1614.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3641,7 +3641,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [200.0, -2925.0, 1614.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3653,7 +3653,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [200.0, -1545.0, 1614.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3665,7 +3665,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [400.0, -2925.0, 1614.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3677,7 +3677,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [400.0, -1545.0, 1614.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3689,7 +3689,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [600.0, -2925.0, 1614.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3701,7 +3701,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [600.0, -1545.0, 1614.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3713,7 +3713,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [800.0, -2925.0, 1614.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3725,7 +3725,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [800.0, -1545.0, 1614.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3737,7 +3737,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [1000.0, -2925.0, 1614.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3749,7 +3749,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [1000.0, -1545.0, 1614.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3761,7 +3761,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [1200.0, -2925.0, 1614.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3773,7 +3773,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [1200.0, -1545.0, 1614.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3785,7 +3785,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [1400.0, -2925.0, 1614.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3797,7 +3797,7 @@ type: "box",
 size: [100.0, 690.0, 4.0], // mm, half-length
 position: [1400.0, -1545.0, 1614.4],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3821,7 +3821,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -3435.0, 1723.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3833,7 +3833,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -3435.0, 1723.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3845,7 +3845,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -3235.0, 1723.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3857,7 +3857,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -3235.0, 1723.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3869,7 +3869,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -3035.0, 1723.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3881,7 +3881,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -3035.0, 1723.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3893,7 +3893,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -2835.0, 1723.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3905,7 +3905,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -2835.0, 1723.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3917,7 +3917,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -2635.0, 1723.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3929,7 +3929,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -2635.0, 1723.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3941,7 +3941,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -2435.0, 1723.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3953,7 +3953,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -2435.0, 1723.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3965,7 +3965,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -2235.0, 1723.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3977,7 +3977,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -2235.0, 1723.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -3989,7 +3989,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -2035.0, 1723.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -4001,7 +4001,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -2035.0, 1723.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -4013,7 +4013,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -1835.0, 1723.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -4025,7 +4025,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -1835.0, 1723.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -4037,7 +4037,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -1635.0, 1723.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -4049,7 +4049,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -1635.0, 1723.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -4061,7 +4061,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -1435.0, 1723.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -4073,7 +4073,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -1435.0, 1723.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -4085,7 +4085,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -1235.0, 1723.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -4097,7 +4097,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -1235.0, 1723.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -4109,7 +4109,7 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [-775.0, -1035.0, 1723.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
 {
 name: "GEO",
@@ -4121,5 +4121,5 @@ type: "box",
 size: [775.0, 100.0, 3.0], // mm, half-length
 position: [775.0, -1035.0, 1723.0],
 color: [0.2, 0.8, 0.2, 0.5],
-material: "plastic_scint",
+material: "polystyrene",
 }
