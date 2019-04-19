@@ -325,11 +325,13 @@ GLG4SteppingAction::UserSteppingAction(const G4Step* aStep)
 					      postStepPoint.z()), 
 				     aStep->GetTotalEnergyDeposit());
     }
-
+    
     G4VPhysicalVolume *volume = aStep->GetPostStepPoint()->GetPhysicalVolume();
     if (volume) {
-      std::string volumeName = volume->GetName();
-      trackInfo->energyLoss[volumeName] += aStep->GetTotalEnergyDeposit();
+      if (track->GetDefinition()->GetParticleName() != "opticalphoton") {
+	std::string volumeName = volume->GetName();   
+	trackInfo->energyLoss[volumeName] += aStep->GetTotalEnergyDeposit();
+      }
     }
 
 #ifdef G4DEBUG

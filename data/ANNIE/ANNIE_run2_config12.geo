@@ -50,6 +50,7 @@ size_z: 1981.2,
 position: [0.0, -2268.8, -1070.2],
 material: "stainless_steel",
 color: [1.0, 0.0, 0.0, 0.1],
+invisible: 1,
 drawstyle: "solid",
 rotation: [90.0, 0.0, 00.0],
 }
@@ -66,6 +67,7 @@ size_z: 1974.8,
 position: [0.0, 0.0, 0.0],
 material: "pvc",
 color: [1.0, 0.5, 0.5, 0.1],
+invisible: 1,
 drawstyle: "solid"
 }
 
@@ -80,7 +82,7 @@ r_max: 1516.6,
 size_z: 1973.8,
 position: [0.0, 0.0, 0.0],
 material: "water_gdS_0p2",
-color: [0.4, 0.4, 0.6, 0.3],
+color: [0.6, 0.8, 1.0, 0.9],
 drawstyle: "solid"
 }
 

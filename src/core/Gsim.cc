@@ -405,7 +405,14 @@ void Gsim::PostUserTrackingAction(const G4Track* aTrack) {
   if(trackInfo) {
     // Fill the energy centroid
     eventInfo->energyCentroid.Add(trackInfo->energyCentroid);
-  
+    eventInfo->energyLoss.insert(trackInfo->energyLoss.begin(), trackInfo->energyLoss.end());
+    
+    for (std::map<std::string, double>::iterator it=trackInfo->energyLoss.begin(); it!=trackInfo->energyLoss.end(); ++it){
+      if(eventInfo->energyLoss[it->first] < it->second) {
+	eventInfo->energyLoss[it->first] = it->second ;
+      }
+    }
+
     // Finally fill the optical centroid information if we have an optical
     // photon which was not created by the TPB but WAS absorbed by it. This
     // represents the best approximation to the "reconstructable" event
@@ -530,6 +537,9 @@ void Gsim::MakeEvent(const G4Event* g4ev, DS::Root* ds) {
   summary->SetEnergyCentroid(exinfo->energyCentroid.GetMean());
   summary->SetEnergyRMS(exinfo->energyCentroid.GetRMS());
   summary->SetEnergyLossByVolume(exinfo->energyLoss);
+//   std::cout <<exinfo->energyLoss.size() << "\n";
+//   for (std::map<std::string, double>::iterator it=exinfo->energyLoss.begin(); it!=exinfo->energyLoss.end(); ++it){
+//     std::cout << it->first << " In MCsummary=> " << it->second << '\n';}
   summary->SetTotalScintEdep(GLG4Scint::GetTotEdep());
   summary->SetTotalScintEdepQuenched(GLG4Scint::GetTotEdepQuenched());
   const G4ThreeVector sCentroid = GLG4Scint::GetScintCentroid();
@@ -537,6 +547,7 @@ void Gsim::MakeEvent(const G4Event* g4ev, DS::Root* ds) {
   summary->SetTotalScintCentroid(scintCentroid);
   summary->SetNumScintPhoton(exinfo->numScintPhoton);
   summary->SetNumReemitPhoton(exinfo->numReemitPhoton);
+  summary->SetNumCherenPhoton(exinfo->numCherenPhoton);
 
   /** PMT and noise simulation */
   GLG4HitPMTCollection* hitpmts = GLG4VEventAction::GetTheHitPMTCollection();
