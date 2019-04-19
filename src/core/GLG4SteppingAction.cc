@@ -331,9 +331,14 @@ GLG4SteppingAction::UserSteppingAction(const G4Step* aStep)
       if (track->GetDefinition()->GetParticleName() != "opticalphoton") {
 	std::string volumeName = volume->GetName();   
 	trackInfo->energyLoss[volumeName] += aStep->GetTotalEnergyDeposit();
+	
+	// 	std::string b("paddle");
+	if (track->GetDefinition()->GetParticleName() == "mu-" || track->GetDefinition()->GetParticleName() == "mu+"){
+	  trackInfo->muonTrack[volumeName] = TLorentzVector(track->GetPosition().x(),track->GetPosition().y(),track->GetPosition().z(),track->GetGlobalTime());
+	}
       }
     }
-
+    
 #ifdef G4DEBUG
   // Particle illumination map
   G4TrackStatus status= track->GetTrackStatus();

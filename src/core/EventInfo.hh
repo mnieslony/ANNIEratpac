@@ -4,8 +4,10 @@
 #include <G4VUserEventInformation.hh>
 #include <RAT/DS/Calib.hh>
 #include <RAT/CentroidCalculator.hh>
+#include <TLorentzVector.h>
 #include <map>
 #include <string>
+#include <vector>
 
 namespace RAT {
 
@@ -16,6 +18,7 @@ public:
     fCalib = new DS::Calib(); // FIXME
     numScintPhoton = 0;
     numReemitPhoton = 0;
+    numCherenPhoton = 0;
     extTriggerType = 0;
     extTriggerTime = 0.0;
   };
@@ -38,6 +41,9 @@ public:
 
   /** Energy lost by this event, indexed by volume name */
   std::map<std::string, double> energyLoss;
+  
+  /** Muon track hit positions and times, indexed by entered volume name */
+  std::map<std::string, TLorentzVector> muonTrack;
 
   /** UTC Time of this Monte Carlo event */
   TTimeStamp utc;
@@ -69,4 +75,3 @@ protected:
 } // namespace RAT
 
 #endif
-

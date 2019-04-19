@@ -348,9 +348,9 @@ void Gsim::PreUserTrackingAction(const G4Track* aTrack)  {
     if (trackInfo && trackInfo->GetCreatorProcess() != "") {
       creatorProcessName = trackInfo->GetCreatorProcess();
     }
-    
-    if (creatorProcessName == "Cherenkov") {
-      eventInfo->numCherenPhoton++;
+
+    if (creatorProcessName == "Cerenkov") {
+      eventInfo->numCherenPhoton++; 
     }
 
     if (creatorProcessName == "Scintillation") {
@@ -410,6 +410,14 @@ void Gsim::PostUserTrackingAction(const G4Track* aTrack) {
     for (std::map<std::string, double>::iterator it=trackInfo->energyLoss.begin(); it!=trackInfo->energyLoss.end(); ++it){
       if(eventInfo->energyLoss[it->first] < it->second) {
 	eventInfo->energyLoss[it->first] = it->second ;
+      }
+    }
+    
+    eventInfo->muonTrack.insert(trackInfo->muonTrack.begin(), trackInfo->muonTrack.end());
+    
+    for (std::map<std::string, TLorentzVector>::iterator it=trackInfo->muonTrack.begin(); it!=trackInfo->muonTrack.end(); ++it){
+      if(eventInfo->muonTrack[it->first].T() < it->second.T()) {
+	eventInfo->muonTrack[it->first] = it->second ;
       }
     }
 
@@ -540,6 +548,7 @@ void Gsim::MakeEvent(const G4Event* g4ev, DS::Root* ds) {
 //   std::cout <<exinfo->energyLoss.size() << "\n";
 //   for (std::map<std::string, double>::iterator it=exinfo->energyLoss.begin(); it!=exinfo->energyLoss.end(); ++it){
 //     std::cout << it->first << " In MCsummary=> " << it->second << '\n';}
+  summary->SetMuonTrackXYZTByVolume(exinfo->muonTrack);	
   summary->SetTotalScintEdep(GLG4Scint::GetTotEdep());
   summary->SetTotalScintEdepQuenched(GLG4Scint::GetTotEdepQuenched());
   const G4ThreeVector sCentroid = GLG4Scint::GetScintCentroid();

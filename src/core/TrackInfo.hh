@@ -5,6 +5,8 @@
 #include <G4Allocator.hh>
 #include <string>
 #include <map>
+#include <vector>
+#include <TLorentzVector.h>
 #include <RAT/CentroidCalculator.hh>
 
 namespace RAT {
@@ -36,6 +38,9 @@ public:
 
   /** Energy lost by this track, indexed by volume name */
   std::map<std::string, double> energyLoss;
+  
+  /** Muon track hit positions and times, indexed by entered volume name */
+  std::map<std::string, TLorentzVector> muonTrack;
   
   /** Step in the parent track at which this track was created */
   void SetCreatorStep(int _CreatorStep)

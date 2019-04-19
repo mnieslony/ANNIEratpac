@@ -14,13 +14,16 @@
 #include <TObject.h>
 #include <TVector3.h>
 #include <TString.h>
+#include <TLorentzVector.h>
 #include <map>
 #include <string>
+#include <vector>
 
 namespace RAT {
   namespace DS {
 
 typedef std::map<std::string, double> StringDoubleMap;
+typedef std::map<std::string, TLorentzVector> StringLorentzMap;
 
 class MCSummary : public TObject {
 public:
@@ -51,6 +54,14 @@ public:
   }
   virtual void SetEnergyLossByVolume(StringDoubleMap _energyLoss) {
     energyLoss = _energyLoss;
+  }
+  
+    /** Convenience method to look up individual elements in CINT */
+  virtual TLorentzVector GetMuonTrackXYZTByVolume(const char *volume) {
+    return muonTrack[volume];
+  }
+  virtual void SetMuonTrackXYZTByVolume(StringLorentzMap _muonTrack) {
+    muonTrack = _muonTrack;
   }
 
   /** Total energy deposited in the scintillator in this event (MeV) */
@@ -98,6 +109,12 @@ public:
     numReemitPhoton = _numReemitPhoton;
   }
   
+  /** Number of photons produced by the Cherenkov process */
+  virtual Int_t GetNumCherenPhoton() const { return numCherenPhoton; }
+  virtual void SetNumCherenPhoton(Int_t _numCherenPhoton) {
+    numCherenPhoton = _numCherenPhoton;
+  }
+  
   /** Interaction type (for GENIE-generated events) */
   virtual const TString& GetInteractionName() const { return interactionName; }
   virtual void SetInteractionName(const TString& _interactionName) {
@@ -109,6 +126,7 @@ public:
 protected:
   Int_t numScintPhoton;
   Int_t numReemitPhoton;
+  Int_t numCherenPhoton;
   Float_t totalScintEdep;
   Float_t totalScintEdepQuenched;
   Float_t initialScintTime;
@@ -118,6 +136,7 @@ protected:
   TVector3 opticalRMS;
   TVector3 totalScintCentroid;
   StringDoubleMap energyLoss;
+  StringLorentzMap muonTrack;
   TString interactionName;
 };
 
@@ -125,4 +144,3 @@ protected:
 } // namespace RAT
 
 #endif
-
