@@ -332,13 +332,18 @@ GLG4SteppingAction::UserSteppingAction(const G4Step* aStep)
 	std::string volumeName = volume->GetName();   
 	trackInfo->energyLoss[volumeName] += aStep->GetTotalEnergyDeposit();
 	
-	// 	std::string b("paddle");
-	if (track->GetDefinition()->GetParticleName() == "mu-" || track->GetDefinition()->GetParticleName() == "mu+"){
-	  trackInfo->muonTrack[volumeName] = TLorentzVector(track->GetPosition().x(),track->GetPosition().y(),track->GetPosition().z(),track->GetGlobalTime());
+// 	std::string b("paddle");
+	if (/*volumeName.find(b) !=std::string::npos &&*/ (track->GetDefinition()->GetParticleName() == "mu-" || track->GetDefinition()->GetParticleName() == "mu+")){
+// 	std::cout << "Step Volume = " << volumeName << std::endl;
+// 	std::cout << "Step Time = " << track->GetGlobalTime() << std::endl;
+// 	std::cout << "Step Position = " << track->GetPosition().x() << " " << track->GetPosition().y() << " " << track->GetPosition().z() << std::endl;
+// 	std::cout << "Step Particle = " << track->GetDefinition()->GetParticleName() << std::endl;
+// 	std::cout << "=======\n";
+	  trackInfo->muonTrack.insert(std::pair<std::string,TLorentzVector>(volumeName,TLorentzVector(track->GetPosition().x(),track->GetPosition().y(),track->GetPosition().z(),track->GetGlobalTime())));
 	}
       }
     }
-    
+
 #ifdef G4DEBUG
   // Particle illumination map
   G4TrackStatus status= track->GetTrackStatus();

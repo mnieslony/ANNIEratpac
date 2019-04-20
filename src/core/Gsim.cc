@@ -405,6 +405,7 @@ void Gsim::PostUserTrackingAction(const G4Track* aTrack) {
   if(trackInfo) {
     // Fill the energy centroid
     eventInfo->energyCentroid.Add(trackInfo->energyCentroid);
+    
     eventInfo->energyLoss.insert(trackInfo->energyLoss.begin(), trackInfo->energyLoss.end());
     
     for (std::map<std::string, double>::iterator it=trackInfo->energyLoss.begin(); it!=trackInfo->energyLoss.end(); ++it){
@@ -414,12 +415,6 @@ void Gsim::PostUserTrackingAction(const G4Track* aTrack) {
     }
     
     eventInfo->muonTrack.insert(trackInfo->muonTrack.begin(), trackInfo->muonTrack.end());
-    
-    for (std::map<std::string, TLorentzVector>::iterator it=trackInfo->muonTrack.begin(); it!=trackInfo->muonTrack.end(); ++it){
-      if(eventInfo->muonTrack[it->first].T() < it->second.T()) {
-	eventInfo->muonTrack[it->first] = it->second ;
-      }
-    }
 
     // Finally fill the optical centroid information if we have an optical
     // photon which was not created by the TPB but WAS absorbed by it. This
@@ -549,6 +544,12 @@ void Gsim::MakeEvent(const G4Event* g4ev, DS::Root* ds) {
 //   for (std::map<std::string, double>::iterator it=exinfo->energyLoss.begin(); it!=exinfo->energyLoss.end(); ++it){
 //     std::cout << it->first << " In MCsummary=> " << it->second << '\n';}
   summary->SetMuonTrackXYZTByVolume(exinfo->muonTrack);	
+//     for (std::map<std::string, TLorentzVector>::iterator it=exinfo->muonTrack.begin(); it!=exinfo->muonTrack.end(); ++it){
+//   std::cout << "Gsim Volume = " << it->first << std::endl;
+// 	std::cout << "Gsim Time = " << it->second.T() << std::endl;
+// 	std::cout << "Gsim Position = " << it->second.X() << " " << it->second.Y() << " " << it->second.Z() << std::endl;
+// 	std::cout << "=======\n";
+// 	}
   summary->SetTotalScintEdep(GLG4Scint::GetTotEdep());
   summary->SetTotalScintEdepQuenched(GLG4Scint::GetTotEdepQuenched());
   const G4ThreeVector sCentroid = GLG4Scint::GetScintCentroid();
