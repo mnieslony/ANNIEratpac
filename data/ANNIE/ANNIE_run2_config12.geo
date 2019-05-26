@@ -94,9 +94,9 @@ drawstyle: "solid"
 // mother: "detector",
 // type: "tube",
 // //r_max: 1150.0,
-// r_max: 500.0,
+// r_max: 1000.0,
 // //size_z: 1500.0,
-// size_z: 500.0,
+// size_z: 1450.0,
 // position: [0.0, 0.0, 0.0],
 // material: "water_gdS_0p2",
 // color: [0.1, 0.4, 0.6, 0.9],
@@ -360,25 +360,25 @@ orient_point: [0.0, 0.0, -1069.4],
 } 
 
 // Side ring 2
-// { 
-// name: "GEO", 
-// index: "side_ring_2_lappds", 
-// enable: 1,
-// valid_begin: [0, 0], 
-// valid_end: [0, 0], 
-// mother: "detector", 
-// type: "lappdarray", 
-// lappd_model: "lappd_basic", 
-// lappd_detector_type: "idlappd",
-// sensitive_detector: "/mydet/pmt/inner_lappd", 
-// efficiency_correction: 1.000,  
-// pos_table: "LAPPDINFO_config12_side_ring_2", //generated on the fly
-// // start_idx: 70, //index of first inner pmt
-// // end_idx: 79, //index of last inner pmt
-// orientation: "point",
+{ 
+name: "GEO", 
+index: "side_ring_2_lappds", 
+enable: 1,
+valid_begin: [0, 0], 
+valid_end: [0, 0], 
+mother: "detector", 
+type: "lappdarray", 
+lappd_model: "lappd_basic", 
+lappd_detector_type: "idlappd",
+sensitive_detector: "/mydet/pmt/inner_lappd", 
+efficiency_correction: 1.000,  
+pos_table: "LAPPDINFO_config12_side_ring_2", //generated on the fly
+// start_idx: 70, //index of first inner pmt
+// end_idx: 79, //index of last inner pmt
+orientation: "manual",
 // orient_point: [0.0, 0.0, -661.9],
-// // orient_point: [0.0, 0.0, -133.3], 
-// } 
+// orient_point: [0.0, 0.0, -133.3], 
+} 
 
 // Side ring 3 
 { 
@@ -396,31 +396,31 @@ efficiency_correction: 1.000,
 pos_table: "LAPPDINFO_config12_side_ring_3", //generated on the fly
 // start_idx: 80, //index of first inner pmt
 // end_idx: 89, //index of last inner pmt
-orientation: "point",
-orient_point: [0.0, 0.0, -254.5],
+orientation: "manual",
+// orient_point: [0.0, 0.0, -254.5],
 // orient_point: [0.0, 0.0, -133.3],   
 } 
 
 // Side ring 4
-// { 
-// name: "GEO", 
-// index: "side_ring_4_lappds", 
-// enable: 1,
-// valid_begin: [0, 0], 
-// valid_end: [0, 0], 
-// mother: "detector", 
-// type: "lappdarray", 
-// lappd_model: "lappd_basic", 
-// lappd_detector_type: "idlappd",
-// sensitive_detector: "/mydet/pmt/inner_lappd", 
-// efficiency_correction: 1.000,  
-// pos_table: "LAPPDINFO_config12_side_ring_4", //generated on the fly
-// // start_idx: 90, //index of first inner pmt
-// // end_idx: 99, //index of last inner pmt
-// orientation: "point",
+{ 
+name: "GEO", 
+index: "side_ring_4_lappds", 
+enable: 1,
+valid_begin: [0, 0], 
+valid_end: [0, 0], 
+mother: "detector", 
+type: "lappdarray", 
+lappd_model: "lappd_basic", 
+lappd_detector_type: "idlappd",
+sensitive_detector: "/mydet/pmt/inner_lappd", 
+efficiency_correction: 1.000,  
+pos_table: "LAPPDINFO_config12_side_ring_4", //generated on the fly
+// start_idx: 90, //index of first inner pmt
+// end_idx: 99, //index of last inner pmt
+orientation: "manual",
 // orient_point: [0.0, 0.0, 153.0],
-// // orient_point: [0.0, 0.0, -133.3],  
-// } 
+// orient_point: [0.0, 0.0, -133.3],  
+} 
 
 // Side ring 5
 { 
@@ -438,31 +438,31 @@ efficiency_correction: 1.000,
 pos_table: "LAPPDINFO_config12_side_ring_5", //generated on the fly
 // start_idx: 100, //index of first inner pmt
 // end_idx: 109, //index of last inner pmt
-orientation: "point",
-orient_point: [0.0, 0.0, 560.5],
+orientation: "manual",
+// orient_point: [0.0, 0.0, 560.5],
 // orient_point: [0.0, 0.0, -133.3],  
 } 
 
 // Side ring 6
-// { 
-// name: "GEO", 
-// index: "side_ring_6_lappds", 
-// enable: 1,
-// valid_begin: [0, 0], 
-// valid_end: [0, 0], 
-// mother: "detector", 
-// type: "lappdarray", 
-// lappd_model: "lappd_basic", 
-// lappd_detector_type: "idlappd",
-// sensitive_detector: "/mydet/pmt/inner_lappd", 
-// efficiency_correction: 1.000,  
-// pos_table: "LAPPDINFO_config12_side_ring_6", //generated on the fly
-// // start_idx: 100, //index of first inner pmt
-// // end_idx: 109, //index of last inner pmt
-// orientation: "point",
+{ 
+name: "GEO", 
+index: "side_ring_6_lappds", 
+enable: 1,
+valid_begin: [0, 0], 
+valid_end: [0, 0], 
+mother: "detector", 
+type: "lappdarray", 
+lappd_model: "lappd_basic", 
+lappd_detector_type: "idlappd",
+sensitive_detector: "/mydet/pmt/inner_lappd", 
+efficiency_correction: 1.000,  
+pos_table: "LAPPDINFO_config12_side_ring_6", //generated on the fly
+// start_idx: 100, //index of first inner pmt
+// end_idx: 109, //index of last inner pmt
+orientation: "manual",
 // orient_point: [0.0, 0.0, 967.9],
-// // orient_point: [0.0, 0.0, -133.3],  
-// }
+// orient_point: [0.0, 0.0, -133.3],  
+}
 
 /////////////////////////////////////////////////////////////////////
 ///////////********** End of LAPPD arrays ***********//////////////////

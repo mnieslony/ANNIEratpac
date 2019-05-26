@@ -34,7 +34,7 @@
 /vis/drawVolume
 
 #/vis/viewer/set/viewpointThetaPhi 20 20
-/vis/viewer/set/viewpointVector 0.001 1.0 0.01
+/vis/viewer/set/viewpointVector 0.001 1.01 0.001
 /vis/viewer/zoom 3.0
 #/vis/viewer/pan 1.0 -2.2 m  # this finally works !
 /vis/viewer/pan 0.5 0.2 m  # this finally works !
@@ -55,10 +55,19 @@
 
 /generator/add combo gun:point
 /generator/pos/set 0.1 -33.8 1749.4
-/generator/vtx/set mu- 0 0 -1 1500
+/generator/vtx/set mu- 0 0 1 1500
 /run/beamOn 1
 
-/generator/vtx/set mu- 0 0 1 1500
+/generator/vtx/set e- 0 0 1 40
+/run/beamOn 1
+
+/generator/vtx/set e- 0 0 1 30
+/run/beamOn 1
+
+/generator/vtx/set e- 0 0 1 20
+/run/beamOn 1
+
+/generator/vtx/set e- 0 0 1 10
 /run/beamOn 1
 
 /generator/vtx/set e- 0 -1 0 10
