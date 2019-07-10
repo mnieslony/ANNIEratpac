@@ -4,6 +4,7 @@
 #include <RAT/GLG4PMTOpticalModel.hh>
 #include <RAT/LAPPDConstruction.hh>
 #include <G4Box.hh>
+#include <G4Trap.hh>
 #include <G4Region.hh>
 #include <G4VisAttributes.hh>
 #include <G4LogicalBorderSurface.hh>
@@ -43,8 +44,9 @@ namespace RAT {
     // Construct inners
     const double vacuumWidth = fParams.width - fParams.glassThickness;
     const double vacuumThick = fParams.thick - fParams.glassThickness;
-    G4Box* vacuum_solid = new G4Box( prefix + "_vacuum_solid", vacuumWidth, vacuumWidth, vacuumThick);
-    
+//     G4Box* vacuum_solid = new G4Box( prefix + "_vacuum_solid", vacuumWidth, vacuumWidth, vacuumThick);
+    G4Trap* vacuum_solid = new G4Trap( prefix + "_vacuum_solid", 20, 50+vacuumWidth, 1000+vacuumThick, 50);
+
 //     if (fParams.constructHousing) {
 //       const double housingThick = fParams.thick + 2.*fParams.windowThickness;
 //       const double housingWidth = fParams.width + 2.*fParams.windowThickness;
@@ -124,7 +126,8 @@ namespace RAT {
 
   
   G4VSolid* LAPPDConstruction::BuildSolid(const string &name) {
-    G4Box* body = new G4Box(name, fParams.width, fParams.width, fParams.thick);
+//     G4Box* body = new G4Box(name, fParams.width, fParams.width, fParams.thick);
+    G4Box* body = new G4Box(name, 2000., fParams.width, fParams.thick);
     return body;
   }
 

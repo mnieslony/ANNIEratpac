@@ -485,7 +485,7 @@ G4VPhysicalVolume *GeoPMTFactoryBase::ConstructPMTs(DBLinkPtr table,
     double angle_y = (-1.0)*atan2(pmtdir.x(), pmtdir.z());
     double angle_x = atan2(pmtdir.y(),
 			   sqrt(pmtdir.x()*pmtdir.x()+pmtdir.z()*pmtdir.z()));
-    
+    cout << pmtdir.x() << " " << pmtdir.y() << " " << pmtdir.z() << endl;
     G4RotationMatrix* pmtrot = new G4RotationMatrix();
     pmtrot->rotateY(angle_y);
     pmtrot->rotateX(angle_x);

@@ -72,7 +72,7 @@ def src_module(env, module_name, header_subdir=""):
 
     headers = glob.glob(srcdir+'/*.hh') + glob.glob(srcdir+'/*.hpp') + \
               glob.glob(srcdir+'/*.tpp') + glob.glob(srcdir+'/*.icc') + \
-              glob.glob(srcdir+'/*.h')
+              glob.glob(srcdir+'/*.h') + glob.glob(srcdir+'/*.inline')
     env['INCLUDE_SUBDIR'] = header_subdir
     for h in headers:
         env.Append(RATHEADERS=env.RATHeader(h))

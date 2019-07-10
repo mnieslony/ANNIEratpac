@@ -21,6 +21,7 @@
 
 #pragma link C++ class RAT::DS::PosFit+;
 #pragma link C++ class RAT::DS::Centroid+;
+#pragma link C++ class RAT::DS::BonsaiFit+;
 #pragma link C++ class RAT::DS::PathFit+;
 
 #pragma link C++ class RAT::DS::RunStore+;

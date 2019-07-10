@@ -443,15 +443,15 @@ G4VPhysicalVolume *GeoLAPPDFactoryBase::ConstructLAPPDs(DBLinkPtr table,
             cout<<"\nError: undefined B Efficiency Model\n";
       }
     }
-    
+
     // rotation required to point in direction of lappddir
-    double angle_y = (-1.0)*atan2(lappddir.x(), lappddir.z());
-    double angle_x = atan2(lappddir.y(),
-			   sqrt(lappddir.x()*lappddir.x()+lappddir.z()*lappddir.z()));
+    double angle_y = (-1.0) * atan2(lappddir.x(), lappddir.z()) * (-lappddir.x()/abs(lappddir.x()));
+    double angle_x = -atan2(-lappddir.y(),-lappddir.x());
     
     G4RotationMatrix* lappdrot = new G4RotationMatrix();
     lappdrot->rotateY(angle_y);
     lappdrot->rotateX(angle_x);
+    lappdrot->rotateZ(CLHEP::pi);    
     // ****************************************************************
     // * Use the constructor that specifies the PHYSICAL mother, since
     // * each LAPPD occurs only once in one physical volume.  This saves

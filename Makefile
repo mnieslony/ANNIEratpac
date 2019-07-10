@@ -1,6 +1,7 @@
+BONSAI_DIR := build/linuxx8664gcc/fit/bonsai
 G4VERSION := $(shell eval geant4-config --version)
 
-all:
+all: bonsai
 ifeq ($(G4VERSION), 10.1.2)
 	@echo 'Your geant4 version is $(G4VERSION). Using "scons" to build'
 	scons -j4
@@ -22,6 +23,10 @@ installdata:
 doc:
 	scons doc
 	@echo 'You can run "scons doc" directly to extract/generate docs.'
+	
+bonsai:
+	mkdir -p $(BONSAI_DIR)
+	gfortran -c src/fit/bonsai/lfariadne.F -o $(BONSAI_DIR)/lfariadne.o
 
 clean:
 	scons -c
