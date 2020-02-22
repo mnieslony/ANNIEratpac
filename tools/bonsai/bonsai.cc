@@ -30,8 +30,8 @@ using namespace std;
 #include <fourhitgrid.h>
 
 //Need to seperate the Inner-Detector tubes from the Outer-Detector tubes
-static const int innerPMTcode = 1;
-static const int vetoPMTcode  = 2;
+static const int innerPMTcode = 4;
+static const int vetoPMTcode  = 9999;
 
 extern "C"{
 void lfariadne_(float *av,int *anhit,float *apmt,float *adir, float *amsg, float *aratio,int *anscat,float *acosscat);
@@ -310,7 +310,7 @@ int main(int argc, char **argv)
 	      pmt=ev->GetPMT(hit);
 	      id = pmt->GetID();
 	      //only use information from the inner pmts
-	      if(pmtinfo->GetType(id) == innerPMTcode)
+	      if(pmtinfo->GetType(id)<=innerPMTcode)
 		{
 		  cables[count]=pmt->GetID()+1;
 		  times[count]=pmt->GetTime()+offsetT;
@@ -443,7 +443,7 @@ int main(int argc, char **argv)
 	  p2ToB = pmtBoundZ-sqrt(z*z);
 	  closestPMT = TMath::Min(p2W,p2ToB);
 
-	  dt1 = ev->GetCalibratedTriggerTime();
+	  dt1 = ev->GetUTC();
 	  dt0 = bslike->get_zero()-offsetT;
 	  prev_x=x;prev_y=y;prev_z=z;
 	  old_t = double(timestamp_s)+double(timestamp_ns)/1e9;

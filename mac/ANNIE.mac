@@ -1,7 +1,7 @@
 /glg4debug/glg4param omit_muon_processes  0.0
 /glg4debug/glg4param omit_hadronic_processes  0.0
 
-/tracking/verbose 0
+/tracking/verbose 1
 /run/verbose 0
 /event/verbose 0
 
@@ -17,7 +17,7 @@
 
 /run/initialize
 
-/process/activate Cerenkov all
+/process/inactivate Cerenkov all
 /glg4scint/off
 
 
@@ -53,8 +53,8 @@
 #/generator/vtx/set mu- -2 0 1 2000
 #/run/beamOn 1
 
-/generator/vtx/set e- 0 0 1 10
-/run/beamOn 100
+/generator/vtx/set pi+ 0 0 0 500
+/run/beamOn 10
 
 #END EVENT LOOP
 #####################

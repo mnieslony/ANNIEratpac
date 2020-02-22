@@ -102,8 +102,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct() {
       parser.Read(gdml_file);
       fWorldPhys = parser.GetWorldVolume();
   }
- 
-
+  
   return fWorldPhys;
 }
 

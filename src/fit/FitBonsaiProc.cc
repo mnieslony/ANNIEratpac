@@ -23,7 +23,7 @@ static const int minHit         = 4;
 static const int maxHit         = 2000;
 
 static const double timeOffset  = 800.;
-static const double darkRateHz = 10000.;
+static const double darkRateHz  = 10000.;
 
 static const double mm2cm       = 0.1;
 static const double cm2mm       = 10.0;
