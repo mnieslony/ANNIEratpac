@@ -8,8 +8,11 @@
 /tracking/discardParticleTrajectory e-
 
 /rat/db/set DETECTOR experiment "ANNIE"
-/rat/db/set DETECTOR geo_file "ANNIE/ANNIE_run2_config8.geo"
-#/rat/db/load ANNIE/ANNIE_AmBesource.geo
+/rat/db/set DETECTOR geo_file "ANNIE/ANNIE_run2_config12.geo"
+#/rat/db/set DETECTOR gdml_file "annie_v04.gdml"
+/rat/db/load ANNIE/ANNIE_InnerStructure.geo
+/rat/db/load ANNIE/ANNIE_MRD_FACC.geo
+/rat/db/load ANNIE/ANNIE_AmBesource.geo
 
 /run/initialize
 
@@ -54,14 +57,28 @@
 /rat/proclast outroot
 
 #/generator/add ambe regexfill
-#/generator/pos/set AmBe_source
+/generator/add ambe regexfill
+/generator/pos/set AmBe_source
 #/generator/pos/set 0 -133.3 1724 #center of tank
-/generator/add combo gun:point
+#/generator/add combo gun:point
 #/generator/pos/set ^detector*|^ncv*
-/generator/pos/set 0 -133.3 1724 #center of tank
-/generator/vtx/set neutron 0 0 0 2.5e-8
+#/generator/pos/set 0 -133.3 1724 #center of tank
+#/generator/pos/set 0 -33.8 1749.4
 
-/run/beamOn 100
+/run/beamOn 10000
+
+#/generator/vtx/set geantino 0 0 1 1
+#/run/beamOn 1
+#/generator/vtx/set geantino 0 0 -1 1
+#/run/beamOn 1
+#/generator/vtx/set geantino 0 1 0 1
+#/run/beamOn 1
+#/generator/vtx/set geantino 0 -1 0 1
+#/run/beamOn 1
+#/generator/vtx/set geantino 1 0 0 1
+#/run/beamOn 1
+#/generator/vtx/set geantino -1 0 0 1
+#/run/beamOn 1
 
 #END EVENT LOOP
 #####################
