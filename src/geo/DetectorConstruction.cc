@@ -13,7 +13,7 @@
 #include <RAT/Log.hh>
 #include <RAT/GeoBuilder.hh>
 #include <RAT/Materials.hh>
-#include <G4GDMLParser.hh>
+//#include <G4GDMLParser.hh>
 
 #include <RAT/DetectorFactory.hh>
 #include <RAT/WatchmanDetectorFactory.hh>
@@ -98,9 +98,9 @@ G4VPhysicalVolume* DetectorConstruction::Construct() {
       GeoBuilder geo;
       fWorldPhys = geo.ConstructAll();
   } else {  
-      G4GDMLParser parser;
-      parser.Read(gdml_file);
-      fWorldPhys = parser.GetWorldVolume();
+      //G4GDMLParser parser;
+      //parser.Read(gdml_file);
+      //fWorldPhys = parser.GetWorldVolume();
   }
   
   return fWorldPhys;

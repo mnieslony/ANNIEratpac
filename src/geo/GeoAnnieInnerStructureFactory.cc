@@ -15,7 +15,7 @@
 #include <G4OpticalSurface.hh>
 #include <G4LogicalBorderSurface.hh>
 #include <CLHEP/Units/SystemOfUnits.h>
-#include <G4GDMLParser.hh>
+//#include <G4GDMLParser.hh>
 #include <G4Color.hh>
 #include <vector>
 
@@ -45,16 +45,16 @@ G4VPhysicalVolume *GeoAnnieInnerStructureFactory::Construct(DBLinkPtr table) {
     G4VPhysicalVolume* innerstructure_phys;
     G4LogicalVolume* innerstructure_log;
     G4VPhysicalVolume* innerstructure_phys_placement;
-    G4GDMLParser parser;
+    //G4GDMLParser parser;
     
     if(enable_structure != 0){
-      parser.Read(gdml_file);
-      innerstructure_phys = parser.GetWorldVolume();
+      //parser.Read(gdml_file);
+      //innerstructure_phys = parser.GetWorldVolume();
       
-      innerstructure_log = innerstructure_phys->GetLogicalVolume();
-      innerstructure_phys_placement = new G4PVPlacement(rotm, StructureCenter, innerstructure_log, "innerstructure_phys", motherLog, false, 0, false);
+      //innerstructure_log = innerstructure_phys->GetLogicalVolume();
+      //innerstructure_phys_placement = new G4PVPlacement(rotm, StructureCenter, innerstructure_log, "innerstructure_phys", motherLog, false, 0, false);
       
-      innerstructure_log->SetVisAttributes(G4Color(0.1,0.,1.0,1));
+      //innerstructure_log->SetVisAttributes(G4Color(0.1,0.,1.0,1));
     }
     
     //     G4Material *frameMaterial = G4Material::GetMaterial(InnerStructureinfo->GetS("frame_material")); // frame material
@@ -68,7 +68,7 @@ G4VPhysicalVolume *GeoAnnieInnerStructureFactory::Construct(DBLinkPtr table) {
     //     G4OpticalSurface *metal_surf = GetSurface(OPTICSinfo->GetS("metal_surface"));
     
     if(enable_structure != 0){
-      return innerstructure_phys_placement;
+      //return innerstructure_phys_placement;
     } else {
       return NULL; 
     }
