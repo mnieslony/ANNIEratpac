@@ -715,6 +715,7 @@ GLG4Scint::MyPhysicsTable::Entry::Entry() {
   I_own_spectrumIntegral = I_own_timeIntegral = false;
   resolutionScale = 1.0;
   light_yield = 0.0;
+  rise_time = 0.0;
   DMsConstant = birksConstant = ref_dE_dx = 0.0;
   QuenchingArray = NULL;
 }
@@ -754,6 +755,7 @@ void GLG4Scint::MyPhysicsTable::Entry::Build(
   resolutionScale = 1.0;
   birksConstant = ref_dE_dx = 0.0;    
   light_yield = 0.0;    
+  rise_time=0.0;
   QuenchingArray = NULL;
 
   // Exit, leaving default values, if no material properties
@@ -810,6 +812,18 @@ void GLG4Scint::MyPhysicsTable::Entry::Build(
     I_own_spectrumIntegral = false;
   }
 
+  //Retrieve the scintillation rise time value 
+  // for the material from the material's optical
+  // properties table ("SCINT_RISE_TIME")
+ if (aMaterialPropertiesTable->ConstPropertyExists("SCINT_RISE_TIME")){
+    rise_time=aMaterialPropertiesTable->GetConstProperty("SCINT_RISE_TIME");
+	G4cout<<"Reading in the SCINT RISE TIME "<<rise_time<<G4endl;
+  }
+ RAT::Log::Assert(rise_time >= 0.0, "GLG4Scint::MyPhysicsTable::Entry::Build(): "
+                                     "rise time must be greater than or equal to 0.");
+
+
+
   // Retrieve vector of scintillation time profile
   // for the material from the material's optical
   // properties table ("SCINTWAVEFORM")
@@ -852,10 +866,14 @@ void GLG4Scint::MyPhysicsTable::Entry::Build(
       
       for (unsigned int j=0; j < theWaveForm->GetVectorLength(); j++) {
         G4double ampl = (*theWaveForm)[j];
-        G4double decy = theWaveForm->Energy(j);
+        G4double decy = -theWaveForm->Energy(j);
         {
           for (int ii=0; ii<nbins; ii++) {
-            ival[ii] += ampl * (1.0 - exp(tval[ii] / decy));
+ 		 if (rise_time != 0.0) {
+                   ival[ii] += ampl*(decy*(1.0-exp(-tval[ii]/decy))+rise_time*(exp(-tval[ii]/rise_time)-1))/(decy-rise_time);
+                 } else {
+                   ival[ii] += ampl*(1.0-exp(-tval[ii]/decy));
+                 }
           }
         }
       }
