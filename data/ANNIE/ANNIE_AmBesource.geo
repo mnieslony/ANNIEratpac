@@ -1,6 +1,21 @@
 ////// AmBe source geometry
 // The source (beryllium) is enclosed in a case (stainless steel)
 
+{
+name: "GEO",
+index: "fake_volume_cosmics", //represents the black bag with the wires inside
+enable: 1,
+valid_begin: [0, 0],
+valid_end: [0, 0],
+mother: "detector",
+type: "tube",
+r_max: 150.0,
+size_z: 1.0,
+position: [0.0, 0.0, 300.0], // position is housing body position + 30 cm in Z
+material: "water_gdS_0p2", 
+color: [0.0, 1.0, 1.0, 0.1],
+drawstyle: "solid",
+}
 
 {
 name: "GEO",
