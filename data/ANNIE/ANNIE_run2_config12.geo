@@ -161,7 +161,7 @@ pos_table: "PMTINFO_config12_topgrid", //generated on the fly
 orientation: "manual",
 } 
 
-Side ring 1 (lower)
+// Side ring 1 (lower)
 { 
 name: "GEO", 
 index: "side_ring_1_pmts", 
