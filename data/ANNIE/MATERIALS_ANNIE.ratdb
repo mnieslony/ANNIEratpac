@@ -84,31 +84,20 @@ materials: ["C15H24_lab","C16H26_lab","C17H28_lab","C18H30_lab","C19H32_lab"],
 matprop: [0.012, 0.204, 0.432, 0.334, 0.018,],
 }
 
-
-// Water-based LS from THEIA
+//1% WbLS 
 {
 name: "MATERIAL",
-index: "wbls_5pct",
-valid_begin : [0, 0],
-valid_end : [0, 0],
+index: "wbls_1pct_0420",
+valid_begin: [0,0],
+valid_end: [0,0],
 density: 1.0,
 nelements: 0,
+ 
 nmaterials: 3,
 materials: ["lab", "ppo", "water"],
-matprop: [0.049835, 0.000165, 0.950000],
+matprop: [0.009977, 2.3e-05, 0.99]
 }
 
-{
-name: "MATERIAL",
-index: "wbls_10pct",
-valid_begin : [0, 0],
-valid_end : [0, 0],
-density: 1.0,
-nelements: 0,
-nmaterials: 3,
-materials: ["lab", "ppo", "water"],
-matprop: [0.099670, 0.000330, 0.900000],
-}
 
 // Gadolinium as a material
 {
