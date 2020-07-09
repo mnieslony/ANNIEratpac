@@ -10,9 +10,9 @@
 /rat/db/set DETECTOR geo_file "ANNIE/ANNIE_run2_config12.geo"
 #/rat/db/set DETECTOR gdml_file "annie_v04.gdml"
 #/rat/db/load ANNIE/ANNIE_InnerStructure.geo
-#/rat/db/load ANNIE/ANNIE_MRD_FACC.geo
+/rat/db/load ANNIE/ANNIE_MRD_FACC.geo
 
-/rat/db/load ANNIE/ANNIE_AmBesource.geo
+#/rat/db/load ANNIE/ANNIE_AmBesource.geo
 
 /run/initialize
 
@@ -36,7 +36,7 @@
 /vis/drawVolume
 
 #/vis/viewer/set/viewpointThetaPhi 20 20
-/vis/viewer/set/viewpointVector 0.001 0.0005 0.1
+/vis/viewer/set/viewpointVector 0.1 0.1 0.0001
 /vis/viewer/zoom 1.5
 #/vis/viewer/pan 1.0 -2.2 m  # this finally works !
 /vis/viewer/pan 0.5 0.2 m  # this finally works !
