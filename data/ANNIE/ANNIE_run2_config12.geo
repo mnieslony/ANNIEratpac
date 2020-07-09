@@ -177,8 +177,8 @@ efficiency_correction: 1.000,
 pos_table: "PMTINFO_config12_side_ring_1", //generated on the fly
 // start_idx: 60, //index of first inner pmt
 // end_idx: 69, //index of last inner pmt
-orientation: "point",
-orient_point: [1.0, -33.8, -1054.8],
+orientation: "manual",
+//orient_point: [1.0, -33.8, -1054.8],
 // orient_point: [0.0, 0.0, -1054.8],
 // orient_point: [0.0, 0.0, -133.3], 
 } 
@@ -199,8 +199,8 @@ efficiency_correction: 1.000,
 pos_table: "PMTINFO_config12_side_ring_2_1", //generated on the fly
 // start_idx: 70, //index of first inner pmt
 // end_idx: 79, //index of last inner pmt
-orientation: "point",
-orient_point: [1.0, -33.8, -621.3],
+orientation: "manual",
+// orient_point: [1.0, -33.8, -621.3],
 // orient_point: [0.0, 0.0, -621.3],
 // orient_point: [0.0, 0.0, -133.3], 
 } 
@@ -221,8 +221,8 @@ efficiency_correction: 1.000,
 pos_table: "PMTINFO_config12_side_ring_2_2", //generated on the fly
 // start_idx: 70, //index of first inner pmt
 // end_idx: 79, //index of last inner pmt
-orientation: "point",
-orient_point: [1.0, -33.8, -621.3],
+orientation: "manual",
+// orient_point: [1.0, -33.8, -621.3],
 // orient_point: [0.0, 0.0, -621.3],
 // orient_point: [0.0, 0.0, -133.3], 
 } 
@@ -243,8 +243,8 @@ efficiency_correction: 1.000,
 pos_table: "PMTINFO_config12_side_ring_3", //generated on the fly
 // start_idx: 80, //index of first inner pmt
 // end_idx: 89, //index of last inner pmt
-orientation: "point",
-orient_point: [1.0, -33.8, -187.9],
+orientation: "manual",
+// orient_point: [1.0, -33.8, -187.9],
 // orient_point: [0.0, 0.0, -187.9],
 // orient_point: [0.0, 0.0, -133.3],   
 } 
@@ -265,8 +265,8 @@ efficiency_correction: 1.000,
 pos_table: "PMTINFO_config12_side_ring_4_1", //generated on the fly
 // start_idx: 90, //index of first inner pmt
 // end_idx: 99, //index of last inner pmt
-orientation: "point",
-orient_point: [1.0, -33.8, 245.6],
+orientation: "manual",
+// orient_point: [1.0, -33.8, 245.6],
 // orient_point: [0.0, 0.0, 245.6],
 // orient_point: [0.0, 0.0, -133.3],  
 } 
@@ -287,8 +287,8 @@ efficiency_correction: 1.000,
 pos_table: "PMTINFO_config12_side_ring_4_2", //generated on the fly
 // start_idx: 90, //index of first inner pmt
 // end_idx: 99, //index of last inner pmt
-orientation: "point",
-orient_point: [1.0, -33.8, 245.6],
+orientation: "manual",
+// orient_point: [1.0, -33.8, 245.6],
 // orient_point: [0.0, 0.0, 245.6],
 // orient_point: [0.0, 0.0, -133.3],  
 } 
@@ -309,8 +309,8 @@ efficiency_correction: 1.000,
 pos_table: "PMTINFO_config12_side_ring_5", //generated on the fly
 // start_idx: 100, //index of first inner pmt
 // end_idx: 109, //index of last inner pmt
-orientation: "point",
-orient_point: [1.0, -33.8, 679.0],
+orientation: "manual",
+// orient_point: [1.0, -33.8, 679.0],
 // orient_point: [0.0, 0.0, 679.0],
 // orient_point: [0.0, 0.0, -133.3],  
 } 
@@ -331,8 +331,8 @@ efficiency_correction: 1.000,
 pos_table: "PMTINFO_config12_side_ring_6", //generated on the fly
 // start_idx: 100, //index of first inner pmt
 // end_idx: 109, //index of last inner pmt
-orientation: "point",
-orient_point: [1.0, -33.8, 1112.5],
+orientation: "manual",
+// orient_point: [1.0, -33.8, 1112.5],
 // orient_point: [0.0, 0.0, 1112.5],
 // orient_point: [0.0, 0.0, -133.3],  
 } 
