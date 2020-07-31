@@ -17,6 +17,7 @@
 #include <G4RunManager.hh>
 #include <RAT/GLG4OpAttenuation.hh>
 #include <RAT/GLG4Scint.hh>
+#include <RAT/OpRayleigh.hh>
 #include <RAT/GLG4SteppingAction.hh>
 #include <RAT/G4OpWLSBuilder.hh>
 #include <RAT/BNLOpWLSBuilder.hh>
@@ -117,7 +118,7 @@ void PhysicsList::ConstructOpticalProcesses() {
   // originating particle step.  Otherwise, we get too many secondaries!
   G4Cerenkov* cerenkovProcess = new G4Cerenkov();
   cerenkovProcess->SetTrackSecondariesFirst(true);
-  cerenkovProcess->SetMaxNumPhotonsPerStep(100);
+  cerenkovProcess->SetMaxNumPhotonsPerStep(1);
     cerenkovProcess->SetMaxBetaChangePerStep(10.0);
 
   // Attenuation: RAT's GLG4OpAttenuation
@@ -133,7 +134,7 @@ void PhysicsList::ConstructOpticalProcesses() {
   GLG4Scint* defaultScintProcess = new GLG4Scint();
   GLG4Scint* nucleonScintProcess = new GLG4Scint("nucleon", 0.9 * protonMass);
   GLG4Scint* alphaScintProcess = new GLG4Scint("alpha", 0.9 * alphaMass);
-
+  OpRayleigh* rayleighProcess = new OpRayleigh();
   // Optical boundary processes: default G4
   G4OpBoundaryProcess* opBoundaryProcess = new G4OpBoundaryProcess();
 
@@ -150,6 +151,7 @@ void PhysicsList::ConstructOpticalProcesses() {
     nucleonScintProcess->DumpInfo();
     alphaScintProcess->DumpInfo();
     opBoundaryProcess->DumpInfo();
+    rayleighProcess->DumpInfo();
   }
 
   cerenkovProcess->SetVerboseLevel(verboseLevel-1);
@@ -158,7 +160,7 @@ void PhysicsList::ConstructOpticalProcesses() {
   nucleonScintProcess->SetVerboseLevel(verboseLevel-1);
   alphaScintProcess->SetVerboseLevel(verboseLevel-1);
   opBoundaryProcess->SetVerboseLevel(verboseLevel-1);
-
+  rayleighProcess->SetVerboseLevel(verboseLevel-1);
   // Apply processes to all particles where applicable
   theParticleIterator->reset();
   while((*theParticleIterator)()) {
@@ -172,6 +174,7 @@ void PhysicsList::ConstructOpticalProcesses() {
     if (particleName == "opticalphoton") {
       pmanager->AddDiscreteProcess(attenuationProcess);
       pmanager->AddDiscreteProcess(opBoundaryProcess);
+      pmanager->AddDiscreteProcess(rayleighProcess);
     }
   }
 }

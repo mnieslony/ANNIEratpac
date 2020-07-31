@@ -486,6 +486,7 @@ Materials::BuildMaterialPropertiesTable(G4Material* material, DBLinkPtr table) {
   for (vector<std::string>::iterator i=props.begin(); i!=props.end(); i++) {
     // Handle const properties
     if (*i == "LIGHT_YIELD"           || *i == "dEdxCOEFF"            ||
+        *i == "SCINT_RISE_TIME"       || *i == "SCINT_RISE_TIME" ||
         *i == "WLSTIMECONSTANT"       || *i == "WLSMEANNUMBERPHOTONS" ||
         *i == "FASTTIMECONSTANT"      || *i == "SLOWTIMECONSTANT"     ||
         *i == "YIELDRATIO"            || *i == "RESOLUTIONSCALE"      ||
