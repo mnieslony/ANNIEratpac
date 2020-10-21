@@ -120,6 +120,8 @@ int main(int argc, char ** argv)
       }
     }  
   }//end loop over events
+  *branchDS = *ds;
+  outtree->Fill();
 
   // close input GHEP event file
   file.close();
