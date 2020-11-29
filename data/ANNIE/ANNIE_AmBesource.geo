@@ -1,37 +1,37 @@
 ////// AmBe source geometry
 // The source (beryllium) is enclosed in a case (stainless steel)
 
-{
-name: "GEO",
-index: "fake_volume_cosmics", //represents the black bag with the wires inside
-enable: 1,
-valid_begin: [0, 0],
-valid_end: [0, 0],
-mother: "detector",
-type: "tube",
-r_max: 150.0,
-size_z: 1.0,
-position: [0.0, 0.0, 300.0], // position is housing body position + 30 cm in Z
-material: "water_gdS_0p2", 
-color: [0.0, 1.0, 1.0, 0.1],
-drawstyle: "solid",
-}
+// {
+// name: "GEO",
+// index: "fake_volume_cosmics",
+// enable: 1,
+// valid_begin: [0, 0],
+// valid_end: [0, 0],
+// mother: "detector",
+// type: "tube",
+// r_max: 150.0,
+// size_z: 1.0,
+// position: [0.0, 0.0, 300.0], // position is housing body position + 30 cm in Z
+// material: "water_gdS_0p2", 
+// color: [0.0, 1.0, 1.0, 0.1],
+// drawstyle: "solid",
+// }
 
-{
-name: "GEO",
-index: "AmBe_wires_bag", //represents the black bag with the wires inside
-enable: 1,
-valid_begin: [0, 0],
-valid_end: [0, 0],
-mother: "detector",
-type: "tube",
-r_max: 15.0,
-size_z: 100.0,
-position: [0.0, 0.0, 190.0], // position is housing body position + 19 cm in Z
-material: "acrylic_black", 
-color: [0.0, 1.0, 1.0, 0.1],
-drawstyle: "solid",
-}
+// {
+// name: "GEO",
+// index: "AmBe_wires_bag", //represents the black bag with the wires inside
+// enable: 1,
+// valid_begin: [0, 0],
+// valid_end: [0, 0],
+// mother: "detector",
+// type: "tube",
+// r_max: 15.0,
+// size_z: 100.0,
+// position: [0.0, 0.0, 190.0], // position is housing body position + 19 cm in Z
+// material: "acrylic_black", 
+// color: [0.0, 1.0, 1.0, 0.1],
+// drawstyle: "solid",
+// }
 
 {
 name: "GEO",
@@ -44,7 +44,7 @@ type: "tube",
 r_max: 30.0,
 size_z: 12.5,
 position: [0.0, 0.0, 77.5], // position is housing body position + 7.75 cm in Z
-material: "acrylic_black", 
+material: "ptfe_fabric", 
 color: [0.0, 1.0, 1.0, 0.1],
 drawstyle: "solid",
 }
@@ -60,7 +60,7 @@ type: "tube",
 r_max: 30.0,
 size_z: 65.0,
 position: [0.0, 0.0, 0.0], //[0.0, -1000.0, 1000.0]
-material: "acrylic_black", 
+material: "ptfe_fabric", 
 color: [0.0, 1.0, 1.0, 0.1],
 drawstyle: "solid",
 }

@@ -2,7 +2,7 @@
 // ANNIE detector geometry for Phase 2 
 // 
 // Config 12: - 20 LUX 10inch PMTs at bottom 
-//	     - 49 10inch Watchboy, 40 8inch hqe, 4 10inch HQE Watchman
+//	     - 48 10inch Watchboy, 40 8inch hqe, 4 10inch HQE Watchman
 //           - 20 11 inch ETEL PMT on top 
 //
 // Author: V. Fischer <vfischer@ucdavis.edu>
@@ -83,6 +83,55 @@ size_z: 1973.8,
 position: [0.0, 0.0, 0.0],
 material: "water_gdS_0p2",
 color: [0.6, 0.8, 1.0, 0.9],
+drawstyle: "solid"
+}
+
+{
+name: "GEO",
+index: "optical_isolation_barrel",
+valid_begin: [0, 0],
+valid_end: [0, 0],
+mother: "detector",
+type: "tube",
+r_max: 1417.6,
+r_min: 1416.6,
+size_z: 1704.8,
+position: [0.0, 0.0, 0.0],
+material: "pvc_black",
+color: [1.0, 0.5, 0.5, 0.1],
+invisible: 0,
+drawstyle: "solid"
+}
+
+{
+name: "GEO",
+index: "optical_isolation_top",
+valid_begin: [0, 0],
+valid_end: [0, 0],
+mother: "detector",
+type: "tube",
+r_max: 1417.6,
+size_z: 0.5,
+position: [0.0, 0.0, 1704.8],
+material: "pvc_black",
+color: [1.0, 0.5, 0.5, 0.1],
+invisible: 0,
+drawstyle: "solid"
+}
+
+{
+name: "GEO",
+index: "optical_isolation_bottom",
+valid_begin: [0, 0],
+valid_end: [0, 0],
+mother: "detector",
+type: "tube",
+r_max: 1417.6,
+size_z: 0.5,
+position: [0.0, 0.0, -1704.8],
+material: "pvc_black",
+color: [1.0, 0.5, 0.5, 0.1],
+invisible: 0,
 drawstyle: "solid"
 }
 
@@ -335,7 +384,7 @@ orientation: "manual",
 // orient_point: [1.0, -33.8, 1112.5],
 // orient_point: [0.0, 0.0, 1112.5],
 // orient_point: [0.0, 0.0, -133.3],  
-} 
+}
 
 /////////////////////////////////////////////////////////////////////
 ///////////********** End of PMT arrays ***********//////////////////
