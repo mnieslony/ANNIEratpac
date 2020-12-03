@@ -44,7 +44,8 @@ type: "tube",
 r_max: 30.0,
 size_z: 12.5,
 position: [0.0, 0.0, 77.5], // position is housing body position + 7.75 cm in Z
-material: "ptfe_fabric", 
+material: "acrylic_white", 
+surface: "ptfe",
 color: [0.0, 1.0, 1.0, 0.1],
 drawstyle: "solid",
 }
@@ -60,7 +61,8 @@ type: "tube",
 r_max: 30.0,
 size_z: 65.0,
 position: [0.0, 0.0, 0.0], //[0.0, -1000.0, 1000.0]
-material: "ptfe_fabric", 
+material: "acrylic_white", 
+surface: "ptfe",
 color: [0.0, 1.0, 1.0, 0.1],
 drawstyle: "solid",
 }
