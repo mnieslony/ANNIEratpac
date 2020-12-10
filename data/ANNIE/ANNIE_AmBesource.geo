@@ -43,7 +43,7 @@ mother: "detector",
 type: "tube",
 r_max: 35.0,
 size_z: 68.5,
-position: [0.0, 0.0, 0.0], //[0.0, -1000.0, 1000.0]
+position: [0.0, 0.0, 64.55], //Center (AmBe source not housing) is [0.0, 0.0, 64.55], Axis are [+MITPC/-stairs;+FMV/-MRD;+top/-bottom]
 material: "acrylic_uvt", 
 surface: "ptfe",
 color: [0.0, 1.0, 1.0, 0.1],
