@@ -737,6 +737,8 @@ void Gsim::AddMCPhoton(DS::MCPMT* rat_mcpmt, const GLG4HitPhoton* photon,
     photon->GetPolarization(x,y,z);
     rat_mcphoton->SetPolarization(TVector3(x,y,z));
     rat_mcphoton->SetTrackID(photon->GetTrackID());
+    rat_mcphoton->SetPhotonProcess(photon->GetPhotonProcess());
+    rat_mcphoton->SetOriginVol(photon->GetOriginVol());
   }
   else {
     // default values
@@ -745,6 +747,8 @@ void Gsim::AddMCPhoton(DS::MCPMT* rat_mcpmt, const GLG4HitPhoton* photon,
     rat_mcphoton->SetMomentum(TVector3(0,0,0));
     rat_mcphoton->SetPolarization(TVector3(0,0,0));
     rat_mcphoton->SetTrackID(-1);
+    rat_mcphoton->SetPhotonProcess(kOther);
+    rat_mcphoton->SetOriginVol(-1);
   }
   rat_mcphoton->SetHitTime(photon->GetTime());
   rat_mcphoton->SetFrontEndTime(fPMTTime[fPMTInfo->GetModel(rat_mcpmt->GetID())]->PickTime(photon->GetTime()));
@@ -767,6 +771,8 @@ void Gsim::AddMCPhoton_lappd(DS::MCLAPPD* rat_mclappd, const GLG4HitPhoton* phot
     photon->GetPolarization(x,y,z);
     rat_mcphoton->SetPolarization(TVector3(x,y,z));
     rat_mcphoton->SetTrackID(photon->GetTrackID());
+    rat_mcphoton->SetPhotonProcess(photon->GetPhotonProcess());
+    rat_mcphoton->SetOriginVol(photon->GetOriginVol());
   }
   else {
     // default values
@@ -775,6 +781,8 @@ void Gsim::AddMCPhoton_lappd(DS::MCLAPPD* rat_mclappd, const GLG4HitPhoton* phot
     rat_mcphoton->SetMomentum(TVector3(0,0,0));
     rat_mcphoton->SetPolarization(TVector3(0,0,0));
     rat_mcphoton->SetTrackID(-1);
+    rat_mcphoton->SetPhotonProcess(kOther);
+    rat_mcphoton->SetOriginVol(-1);
   }
   rat_mcphoton->SetHitTime(photon->GetTime());
   rat_mcphoton->SetFrontEndTime(fLAPPDTime[fLAPPDInfo->GetModel(rat_mclappd->GetID())]->PickTime(photon->GetTime()));

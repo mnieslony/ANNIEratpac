@@ -60,7 +60,9 @@ class GLG4PMTSD : public G4VSensitiveDetector
 		      const G4ThreeVector & polarization,
 		      G4int iHitPhotonCount,
 		      G4int trackID=-1,
-		      G4bool prepulse=false );
+		      G4bool prepulse=false,
+                      G4String process="",
+                      G4int origin=-1 );
       void SimpleHit_LAPPD( G4int ilappd,
 		      G4double time,
 		      G4double kineticEnergy,
@@ -69,7 +71,9 @@ class GLG4PMTSD : public G4VSensitiveDetector
 		      const G4ThreeVector & polarization,
 		      G4int iHitPhotonCount,
 		      G4int trackID=-1,
-		      G4bool prepulse=false );
+		      G4bool prepulse=false,
+                      G4String process="",
+                      G4int origin=-1 );
   
   protected:
       virtual G4bool ProcessHits(G4Step*aStep,G4TouchableHistory*ROhist);

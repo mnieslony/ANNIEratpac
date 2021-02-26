@@ -18,6 +18,7 @@
 #include "G4LogicalVolume.hh"
 #include "G4LogicalBorderSurface.hh"
 #include "G4UImessenger.hh"
+#include "G4VProcess.hh"
 #include <utility>
 #include <vector>
 

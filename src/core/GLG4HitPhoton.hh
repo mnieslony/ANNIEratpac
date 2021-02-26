@@ -10,6 +10,7 @@
 */
 
 #include <iostream>
+#include "TString.h"
 
 /** GLG4HitPhoton stores information about a photon that makes a
     photoelectron in a PMT.  With count>1, it records multiple
@@ -27,6 +28,10 @@
     @author Glenn Horton-Smith
 */
 
+enum EPhProcess {kAll = 0, kCher = 1, kScnt = 2, kWLS = 3, kOther = 4};
+extern TString EPhProcName[5];
+extern TString EPhProcTitle[5];
+
 class GLG4HitPhoton {
 public:
   GLG4HitPhoton() { fPrepulse=false;}
@@ -42,6 +47,8 @@ public:
   void AddCount(int dcount) { fCount+= dcount; }
   void SetTrackID(int trackID) { fTrackID = trackID; }
   void SetPrepulse(bool prepulse) { fPrepulse = prepulse; }
+  void SetPhotonProcess(std::string process);
+  void SetOriginVol(int originvol) { fOriginVol = originvol; }
 
   int GetPMTID() const { return fPMTID; }
   double GetTime() const { return fTime; }
@@ -53,7 +60,10 @@ public:
   int GetCount() const { return fCount; }
   int GetTrackID() const { return fTrackID; }
   bool GetPrepulse() const { return fPrepulse; }
-  
+  int GetPhotonProcess() const { return fProcess; }  
+  std::string GetPhotonProcessName();
+  int GetOriginVol() const { return fOriginVol; }
+
   void Print(std::ostream &) const;
   
 private:
@@ -69,6 +79,8 @@ private:
                         // the photocathode and a photoelectron was created
                         // at the first dynode, we will choose from the
                         // time and charge distributions for prepulses
+  EPhProcess fProcess;	// Which process created this photon? (Cherenkov, scintillation, reemission, dark noise)
+  int fOriginVol;	// In which volume was the photon produced?
 };
 
 template <class T> inline void 

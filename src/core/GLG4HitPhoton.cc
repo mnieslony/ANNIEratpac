@@ -56,3 +56,20 @@ GLG4HitPhoton::GetWavelength() const {
   return 2*pi*hbarc/fKE;
 }
 
+void
+GLG4HitPhoton::SetPhotonProcess(std::string process){
+  if (process.find("Cerenkov") != std::string::npos) fProcess = kCher;
+  else if (process.find("Scint") != std::string::npos) fProcess = kScnt;
+  else if (process.find("Reemission") != std::string::npos) fProcess = kWLS;
+  else fProcess = kOther;
+}
+
+std::string
+GLG4HitPhoton::GetPhotonProcessName(){
+  std::string prname;
+  if (fProcess == 1) prname = "Cerenkov";
+  else if (fProcess == 2) prname = "Scint";
+  else if (fProcess == 3) prname = "WLS";
+  else prname = "Other";
+  return prname;
+}

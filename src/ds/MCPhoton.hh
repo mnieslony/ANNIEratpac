@@ -69,6 +69,12 @@ public:
   virtual void SetTrackID(Int_t _trackID){ trackID = _trackID;}
   virtual Int_t GetTrackID() const { return trackID; }
 
+  virtual void SetPhotonProcess(Int_t _process){ process = _process;}
+  virtual Int_t GetPhotonProcess() const { return process; }
+
+  virtual void SetOriginVol(Int_t _originvol){ originvol = _originvol;}
+  virtual Int_t GetOriginVol() const { return originvol; }
+
   ClassDef(MCPhoton, 1) 
 
 protected:
@@ -82,6 +88,8 @@ protected:
   Float_t charge;
   Bool_t isDarkHit;
   Int_t trackID;
+  Int_t process;
+  Int_t originvol;
 };
 
   } // namespace DS

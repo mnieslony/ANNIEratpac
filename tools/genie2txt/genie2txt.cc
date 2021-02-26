@@ -69,6 +69,15 @@ int main(int argc, char ** argv)
     double y = 1000.0*eventbranch->event->Vertex()->Y(); // distances from GENIE are in meters
     double z = 1000.0*eventbranch->event->Vertex()->Z(); // distances from GENIE are in meters
 
+    //Convert from GENIE coordinate system to RATPAC coordinate system (slight offset)
+    //Center GENIE (0.00,-0.1445,1.681)m
+    //Center RAT (0.001,-0.0338,1.7494)m
+    //Shift (+1.0,+110.7,+68.4)mm
+
+    x += 1.0;
+    y += 110.7;
+    z += 68.4;
+
     double utc = time;
     //TTimeStamp utc(time,0);
     // mc->SetUTC(utc); // GENIE does not give global time, so we just add arbitrary times for RAT 

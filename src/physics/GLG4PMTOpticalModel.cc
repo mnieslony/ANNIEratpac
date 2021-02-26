@@ -242,6 +242,7 @@ GLG4PMTOpticalModel::DoIt(const G4FastTrack& fastTrack, G4FastStep& fastStep)
     fastTrack.GetEnvelopeLogicalVolume()->GetSensitiveDetector();
   enum EWhereAmI { kInGlass, kInVacuum } whereAmI;
   int ipmt= -1;
+  G4int originVol = -1;
 
   // find which pmt we are in
   ipmt=fastTrack.GetEnvelopePhysicalVolume()->GetCopyNo();
@@ -254,6 +255,25 @@ GLG4PMTOpticalModel::DoIt(const G4FastTrack& fastTrack, G4FastStep& fastStep)
   // get weight and time
   time= fastTrack.GetPrimaryTrack()->GetGlobalTime();  // "global" is correct
   weight= (G4int)( fastTrack.GetPrimaryTrack()->GetWeight() );
+
+  //G4cout <<"Get photon creation process"<<G4endl;
+  // Get photon creation process
+  G4String procName = "";
+  if (fastTrack.GetPrimaryTrack()->GetTrackID() != 1){
+    //G4cout <<"Looking for procName ... "<<G4endl;
+    procName = fastTrack.GetPrimaryTrack()->GetCreatorProcess()->GetProcessName();
+    G4cout <<"Found procName: "<<procName<<G4endl;
+  }
+
+  // Get volume of origin for track
+  G4cout <<"Looking for originVol"<<G4endl;
+  G4VTouchable *touch = (G4VTouchable*) fastTrack.GetPrimaryTrack()->GetOriginTouchable();
+  if (touch) {
+    G4cout <<"touchable exists"<<G4endl;
+    originVol = fastTrack.GetPrimaryTrack()->GetOriginTouchable()->GetCopyNumber(0); //This seems to crash for re-emission photons
+    G4cout << "Found originVol: "<<originVol<<G4endl;
+  }
+  else G4cout <<"touchable does not exist"<<G4endl;
 
   // get n_glass, _n2, _k2, etc., for this wavelength
   energy= fastTrack.GetPrimaryTrack()->GetKineticEnergy();
@@ -440,6 +460,7 @@ GLG4PMTOpticalModel::DoIt(const G4FastTrack& fastTrack, G4FastStep& fastStep)
     if (N_pe > 0) {
       if ( detector != NULL && detector->isActive() ) {
 	if (detector->GetFullPathName().contains("lappd")) {
+          G4cout <<"Creating simple Hit (LAPPD)"<<G4endl;
 	  ((GLG4PMTSD *)detector)->SimpleHit_LAPPD( ipmt,
 					    time,
 					    energy,
@@ -448,8 +469,11 @@ GLG4PMTOpticalModel::DoIt(const G4FastTrack& fastTrack, G4FastStep& fastStep)
 					    pol,
 					    N_pe,
 					    fastTrack.GetPrimaryTrack()->GetTrackID(),
-					    prepulse);
+					    prepulse,
+                                            procName,
+                                            originVol );
 	} else {
+          G4cout <<"Creating simple hit (PMT)"<<G4endl;
 	  ((GLG4PMTSD *)detector)->SimpleHit( ipmt,
 					    time,
 					    energy,
@@ -458,7 +482,9 @@ GLG4PMTOpticalModel::DoIt(const G4FastTrack& fastTrack, G4FastStep& fastStep)
 					    pol,
 					    N_pe,
 					    fastTrack.GetPrimaryTrack()->GetTrackID(),
-					    prepulse); 
+					    prepulse,
+                                            procName,
+                                            originVol ); 
 	}
       }
       if(prepulse)

@@ -72,7 +72,9 @@ void GLG4PMTSD::SimpleHit( G4int ipmt,
 			   const G4ThreeVector &hit_polarization,
 			   G4int iHitPhotonCount,
 			   G4int trackID,
-			   G4bool prepulse )
+			   G4bool prepulse,
+                           G4String process,
+                           G4int origin )
 {
   G4int pmt_index = ipmt - pmt_no_offset;
   if (pmt_index < 0 || pmt_index >= max_pmts)
@@ -108,6 +110,8 @@ void GLG4PMTSD::SimpleHit( G4int ipmt,
   hit_photon->SetCount( iHitPhotonCount );
   hit_photon->SetTrackID( trackID );
   hit_photon->SetPrepulse( prepulse );
+  hit_photon->SetPhotonProcess( process );
+  hit_photon->SetOriginVol( origin );
 
   //  GLG4VEventAction::GetTheHitPhotons()->AddHitPhoton(hit_photon);
   GLG4VEventAction::GetTheHitPMTCollection()->DetectPhoton(hit_photon);
@@ -122,7 +126,9 @@ void GLG4PMTSD::SimpleHit_LAPPD( G4int ilappd,
 			   const G4ThreeVector &hit_polarization,
 			   G4int iHitPhotonCount,
 			   G4int trackID,
-			   G4bool prepulse )
+			   G4bool prepulse,
+                           G4String process,
+                           G4int origin )
 {
   G4int lappd_index = ilappd - pmt_no_offset;
   if (lappd_index < 0 || lappd_index >= max_pmts)
@@ -158,6 +164,9 @@ void GLG4PMTSD::SimpleHit_LAPPD( G4int ilappd,
   hit_photon->SetCount( iHitPhotonCount );
   hit_photon->SetTrackID( trackID );
   hit_photon->SetPrepulse( prepulse );
+
+  hit_photon->SetPhotonProcess( process );
+  hit_photon->SetOriginVol( origin );
 
   //  GLG4VEventAction::GetTheHitPhotons()->AddHitPhoton(hit_photon);
   GLG4VEventAction::GetTheHitLAPPDCollection()->DetectPhoton(hit_photon);
