@@ -71,10 +71,13 @@ void GLG4PMTSD::SimpleHit( G4int ipmt,
 			   const G4ThreeVector &hit_momentum,
 			   const G4ThreeVector &hit_polarization,
 			   G4int iHitPhotonCount,
+                           const G4ThreeVector & originvtx,
 			   G4int trackID,
 			   G4bool prepulse,
                            G4String process,
-                           G4int origin )
+                           G4int origin,
+                           G4int parentid,
+                           G4int parentpdg)
 {
   G4int pmt_index = ipmt - pmt_no_offset;
   if (pmt_index < 0 || pmt_index >= max_pmts)
@@ -112,6 +115,13 @@ void GLG4PMTSD::SimpleHit( G4int ipmt,
   hit_photon->SetPrepulse( prepulse );
   hit_photon->SetPhotonProcess( process );
   hit_photon->SetOriginVol( origin );
+  hit_photon->SetPrimaryParentID( parentid );
+  hit_photon->SetPrimaryParentPDG( parentpdg );
+  hit_photon->SetOriginVertex(
+                              (double)originvtx.x(),
+                              (double)originvtx.y(),
+                              (double)originvtx.z()
+                              );
 
   //  GLG4VEventAction::GetTheHitPhotons()->AddHitPhoton(hit_photon);
   GLG4VEventAction::GetTheHitPMTCollection()->DetectPhoton(hit_photon);
@@ -125,10 +135,13 @@ void GLG4PMTSD::SimpleHit_LAPPD( G4int ilappd,
 			   const G4ThreeVector &hit_momentum,
 			   const G4ThreeVector &hit_polarization,
 			   G4int iHitPhotonCount,
+                           const G4ThreeVector &originvtx,
 			   G4int trackID,
 			   G4bool prepulse,
                            G4String process,
-                           G4int origin )
+                           G4int origin,
+                           G4int parentid,
+                           G4int parentpdg)
 {
   G4int lappd_index = ilappd - pmt_no_offset;
   if (lappd_index < 0 || lappd_index >= max_pmts)
@@ -167,6 +180,14 @@ void GLG4PMTSD::SimpleHit_LAPPD( G4int ilappd,
 
   hit_photon->SetPhotonProcess( process );
   hit_photon->SetOriginVol( origin );
+  hit_photon->SetPrimaryParentID( parentid );
+  hit_photon->SetPrimaryParentPDG( parentpdg );
+  hit_photon->SetOriginVertex(
+                              (double)originvtx.x(),
+                              (double)originvtx.y(),
+                              (double)originvtx.z()
+                              );
+
 
   //  GLG4VEventAction::GetTheHitPhotons()->AddHitPhoton(hit_photon);
   GLG4VEventAction::GetTheHitLAPPDCollection()->DetectPhoton(hit_photon);

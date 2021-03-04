@@ -19,6 +19,8 @@
 #include "G4LogicalBorderSurface.hh"
 #include "G4UImessenger.hh"
 #include "G4VProcess.hh"
+#include <G4UserTrackingAction.hh>
+#include "RAT/TrackInfo.hh"
 #include <utility>
 #include <vector>
 

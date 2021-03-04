@@ -49,6 +49,9 @@ public:
   void SetPrepulse(bool prepulse) { fPrepulse = prepulse; }
   void SetPhotonProcess(std::string process);
   void SetOriginVol(int originvol) { fOriginVol = originvol; }
+  void SetPrimaryParentID(int parentid) { fParentID = parentid; }
+  void SetPrimaryParentPDG(int parentpdg) { fParentPDG = parentpdg; }
+  void SetOriginVertex(double x, double y, double z);
 
   int GetPMTID() const { return fPMTID; }
   double GetTime() const { return fTime; }
@@ -63,6 +66,9 @@ public:
   int GetPhotonProcess() const { return fProcess; }  
   std::string GetPhotonProcessName();
   int GetOriginVol() const { return fOriginVol; }
+  int GetPrimaryParentID() const { return fParentID; }
+  int GetPrimaryParentPDG() const { return fParentPDG; }
+  template <class T> inline void GetOriginVertex(T &x, T &y, T &z) const;
 
   void Print(std::ostream &) const;
   
@@ -81,6 +87,9 @@ private:
                         // time and charge distributions for prepulses
   EPhProcess fProcess;	// Which process created this photon? (Cherenkov, scintillation, reemission, dark noise)
   int fOriginVol;	// In which volume was the photon produced?
+  int fParentID;	// Primary Parent ID for photon
+  int fParentPDG;       // PDG of primary parent for photon
+  float fOriginVtx[3];  // Origin vertex of photon
 };
 
 template <class T> inline void 
@@ -102,6 +111,13 @@ GLG4HitPhoton::GetPolarization(T &x, T &y, T &z) const {
   x= fPolarization[0];
   y= fPolarization[1];
   z= fPolarization[2];
+}
+
+template <class T> inline void
+GLG4HitPhoton::GetOriginVertex(T &x, T &y, T &z) const {
+  x = fOriginVtx[0];
+  y = fOriginVtx[1];
+  z = fOriginVtx[2];
 }
 
 

@@ -524,6 +524,9 @@ GLG4Scint::PostPostStepDoIt(const G4Track& aTrack, const G4Step& aStep) {
       aSecondaryTrack->SetParentID(aTrack.GetTrackID());
       RAT::TrackInfo* trackInfo = new RAT::TrackInfo();
       
+      trackInfo->SetPrimaryParentID(aTrack.GetTrackID());
+      trackInfo->SetPrimaryParentPDG(aTrack.GetParticleDefinition()->GetPDGEncoding());
+
       trackInfo->SetCreatorStep(aTrack.GetCurrentStepNumber());
 
       if (flagReemission) {

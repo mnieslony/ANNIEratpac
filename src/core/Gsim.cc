@@ -391,6 +391,26 @@ void Gsim::PostUserTrackingAction(const G4Track* aTrack) {
   int TrackID = aTrack->GetTrackID();
   int ParentID = aTrack->GetParentID();
   
+  if (aTrack->GetParentID() == 0) {
+    trackInfo->SetPrimaryParentID(aTrack->GetTrackID());
+    trackInfo->SetPrimaryParentPDG(aTrack->GetDefinition()->GetPDGEncoding());
+  }
+
+  G4Track *theTrack = (G4Track*) aTrack;
+  theTrack->SetUserInformation(trackInfo);
+
+  //Pass primary parent ID to children
+  G4TrackVector* secondaries = fpTrackingManager->GimmeSecondaries();
+  if (secondaries){
+    size_t nSeco = secondaries->size();
+    if (nSeco > 0){
+      for (size_t i = 0; i<nSeco; i++){
+        TrackInfo *infoSec = new TrackInfo(trackInfo);
+        (*secondaries)[i]->SetUserInformation(infoSec);
+      }
+    }
+  }
+
   // Determine the creator process
   const G4VProcess* creatorProcess = aTrack->GetCreatorProcess();
   if (creatorProcess) {
@@ -414,6 +434,7 @@ void Gsim::PostUserTrackingAction(const G4Track* aTrack) {
       }
     }
     
+
     eventInfo->muonTrack.insert(trackInfo->muonTrack.begin(), trackInfo->muonTrack.end());
 
     // Finally fill the optical centroid information if we have an optical
@@ -739,6 +760,10 @@ void Gsim::AddMCPhoton(DS::MCPMT* rat_mcpmt, const GLG4HitPhoton* photon,
     rat_mcphoton->SetTrackID(photon->GetTrackID());
     rat_mcphoton->SetPhotonProcess(photon->GetPhotonProcess());
     rat_mcphoton->SetOriginVol(photon->GetOriginVol());
+    rat_mcphoton->SetPrimaryParentID(photon->GetPrimaryParentID());
+    rat_mcphoton->SetPrimaryParentPDG(photon->GetPrimaryParentPDG());
+    photon->GetOriginVertex(x,y,z);
+    rat_mcphoton->SetOriginVertex(TVector3(x,y,z));
   }
   else {
     // default values
@@ -749,6 +774,9 @@ void Gsim::AddMCPhoton(DS::MCPMT* rat_mcpmt, const GLG4HitPhoton* photon,
     rat_mcphoton->SetTrackID(-1);
     rat_mcphoton->SetPhotonProcess(kOther);
     rat_mcphoton->SetOriginVol(-1);
+    rat_mcphoton->SetPrimaryParentID(-1);
+    rat_mcphoton->SetPrimaryParentPDG(-1);
+    rat_mcphoton->SetOriginVertex(TVector3(0,0,0));
   }
   rat_mcphoton->SetHitTime(photon->GetTime());
   rat_mcphoton->SetFrontEndTime(fPMTTime[fPMTInfo->GetModel(rat_mcpmt->GetID())]->PickTime(photon->GetTime()));
@@ -773,6 +801,10 @@ void Gsim::AddMCPhoton_lappd(DS::MCLAPPD* rat_mclappd, const GLG4HitPhoton* phot
     rat_mcphoton->SetTrackID(photon->GetTrackID());
     rat_mcphoton->SetPhotonProcess(photon->GetPhotonProcess());
     rat_mcphoton->SetOriginVol(photon->GetOriginVol());
+    rat_mcphoton->SetPrimaryParentID(photon->GetPrimaryParentID());
+    rat_mcphoton->SetPrimaryParentPDG(photon->GetPrimaryParentPDG());
+    photon->GetOriginVertex(x,y,z);
+    rat_mcphoton->SetOriginVertex(TVector3(x,y,z));
   }
   else {
     // default values
@@ -783,6 +815,9 @@ void Gsim::AddMCPhoton_lappd(DS::MCLAPPD* rat_mclappd, const GLG4HitPhoton* phot
     rat_mcphoton->SetTrackID(-1);
     rat_mcphoton->SetPhotonProcess(kOther);
     rat_mcphoton->SetOriginVol(-1);
+    rat_mcphoton->SetPrimaryParentID(-1);
+    rat_mcphoton->SetPrimaryParentPDG(-1);
+    rat_mcphoton->SetOriginVertex(TVector3(0,0,0));
   }
   rat_mcphoton->SetHitTime(photon->GetTime());
   rat_mcphoton->SetFrontEndTime(fLAPPDTime[fLAPPDInfo->GetModel(rat_mclappd->GetID())]->PickTime(photon->GetTime()));

@@ -45,6 +45,13 @@ GLG4HitPhoton::SetPolarization(double x, double y, double z) {
   fPolarization[2]= z;
 }
 
+void
+GLG4HitPhoton::SetOriginVertex(double x, double y, double z) {
+  fOriginVtx[0] = x;
+  fOriginVtx[1] = y;
+  fOriginVtx[2] = z;
+}
+
 
 double 
 GLG4HitPhoton::GetKineticEnergy() const {

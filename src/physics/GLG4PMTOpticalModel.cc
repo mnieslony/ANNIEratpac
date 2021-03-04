@@ -32,6 +32,7 @@
 #include <complex>
 #include <RAT/PhotonThinning.hh>
 #include <RAT/Log.hh>
+#include <RAT/TrackInfo.hh>
 
 G4UIdirectory* GLG4PMTOpticalModel::fgCmdDir = NULL;
 
@@ -244,6 +245,17 @@ GLG4PMTOpticalModel::DoIt(const G4FastTrack& fastTrack, G4FastStep& fastStep)
   int ipmt= -1;
   G4int originVol = -1;
 
+  G4int parentid = -1;
+  G4int parentpdg = -1;
+  RAT::TrackInfo *trackInfo = dynamic_cast<RAT::TrackInfo*>(fastTrack.GetPrimaryTrack()->GetUserInformation());
+  if (trackInfo){
+    parentid = trackInfo->GetPrimaryParentID();
+    parentpdg = trackInfo->GetPrimaryParentPDG();
+  }
+
+  //Get photon track start position (vertex)
+  G4ThreeVector photon_vtx = fastTrack.GetPrimaryTrack()->GetVertexPosition();
+
   // find which pmt we are in
   ipmt=fastTrack.GetEnvelopePhysicalVolume()->GetCopyNo();
     
@@ -262,18 +274,19 @@ GLG4PMTOpticalModel::DoIt(const G4FastTrack& fastTrack, G4FastStep& fastStep)
   if (fastTrack.GetPrimaryTrack()->GetTrackID() != 1){
     //G4cout <<"Looking for procName ... "<<G4endl;
     procName = fastTrack.GetPrimaryTrack()->GetCreatorProcess()->GetProcessName();
-    G4cout <<"Found procName: "<<procName<<G4endl;
+    //G4cout <<"Found procName: "<<procName<<G4endl;
   }
 
   // Get volume of origin for track
-  G4cout <<"Looking for originVol"<<G4endl;
+  //G4cout <<"Looking for originVol"<<G4endl;
   G4VTouchable *touch = (G4VTouchable*) fastTrack.GetPrimaryTrack()->GetOriginTouchable();
   if (touch) {
-    G4cout <<"touchable exists"<<G4endl;
-    originVol = fastTrack.GetPrimaryTrack()->GetOriginTouchable()->GetCopyNumber(0); //This seems to crash for re-emission photons
-    G4cout << "Found originVol: "<<originVol<<G4endl;
+    //G4cout <<"touchable exists"<<G4endl;
+    originVol = fastTrack.GetPrimaryTrack()->GetOriginTouchable()->GetCopyNumber(1); //This seems to crash for re-emission photons
+    //G4cout << "Found originVol: "<<originVol<<G4endl;
   }
-  else G4cout <<"touchable does not exist"<<G4endl;
+  //else G4cout <<"touchable does not exist"<<G4endl;
+
 
   // get n_glass, _n2, _k2, etc., for this wavelength
   energy= fastTrack.GetPrimaryTrack()->GetKineticEnergy();
@@ -460,7 +473,7 @@ GLG4PMTOpticalModel::DoIt(const G4FastTrack& fastTrack, G4FastStep& fastStep)
     if (N_pe > 0) {
       if ( detector != NULL && detector->isActive() ) {
 	if (detector->GetFullPathName().contains("lappd")) {
-          G4cout <<"Creating simple Hit (LAPPD)"<<G4endl;
+          //G4cout <<"Creating simple Hit (LAPPD)"<<G4endl;
 	  ((GLG4PMTSD *)detector)->SimpleHit_LAPPD( ipmt,
 					    time,
 					    energy,
@@ -468,12 +481,15 @@ GLG4PMTOpticalModel::DoIt(const G4FastTrack& fastTrack, G4FastStep& fastStep)
 					    dir,
 					    pol,
 					    N_pe,
+                                            photon_vtx,
 					    fastTrack.GetPrimaryTrack()->GetTrackID(),
 					    prepulse,
                                             procName,
-                                            originVol );
+                                            originVol,
+                                            parentid,
+                                            parentpdg);
 	} else {
-          G4cout <<"Creating simple hit (PMT)"<<G4endl;
+          //G4cout <<"Creating simple hit (PMT)"<<G4endl;
 	  ((GLG4PMTSD *)detector)->SimpleHit( ipmt,
 					    time,
 					    energy,
@@ -481,10 +497,13 @@ GLG4PMTOpticalModel::DoIt(const G4FastTrack& fastTrack, G4FastStep& fastStep)
 					    dir,
 					    pol,
 					    N_pe,
+                                            photon_vtx,
 					    fastTrack.GetPrimaryTrack()->GetTrackID(),
 					    prepulse,
                                             procName,
-                                            originVol ); 
+                                            originVol,
+                                            parentid,
+                                            parentpdg); 
 	}
       }
       if(prepulse)

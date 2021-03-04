@@ -16,6 +16,9 @@ class TrackInfo : public G4VUserTrackInformation
 { 
 public: 
   TrackInfo() {};
+  TrackInfo(const TrackInfo* someinfo){
+    fPrimaryParentID = someinfo->GetPrimaryParentID(); fPrimaryParentPDG = someinfo->GetPrimaryParentPDG();
+  }
   virtual ~TrackInfo() {};
 
   inline void* operator new(size_t);
@@ -47,11 +50,22 @@ public:
   { CreatorStep=_CreatorStep; };
   int GetCreatorStep() const { return CreatorStep; };
 
+  void SetPrimaryParentID(int primaryPID)
+  { fPrimaryParentID = primaryPID; }
+
+  void SetPrimaryParentPDG(int primaryPPDG)
+  { fPrimaryParentPDG = primaryPPDG; }
+
+  int GetPrimaryParentID() const { return fPrimaryParentID; };
+  int GetPrimaryParentPDG() const { return fPrimaryParentPDG; };
+
   virtual void Print() const { };
   
 protected:
   std::string fCreatorProcess;
   int CreatorStep;
+  int fPrimaryParentID;
+  int fPrimaryParentPDG;
 }; 
 
 // GEANT4 uses a custom allocator on subclass, so we need to override it here.

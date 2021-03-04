@@ -75,6 +75,15 @@ public:
   virtual void SetOriginVol(Int_t _originvol){ originvol = _originvol;}
   virtual Int_t GetOriginVol() const { return originvol; }
 
+  virtual void SetPrimaryParentID(Int_t _parentid) {parentid = _parentid;}
+  virtual Int_t GetPrimaryParentID() const { return parentid; }
+
+  virtual void SetPrimaryParentPDG(Int_t _parentpdg) {parentpdg = _parentpdg;}
+  virtual Int_t GetPrimaryParentPDG() const { return parentpdg; }
+
+  virtual TVector3 GetOriginVertex() const { return originvtx; }
+  virtual void SetOriginVertex(const TVector3 &_originvtx) { originvtx = _originvtx; }
+
   ClassDef(MCPhoton, 1) 
 
 protected:
@@ -90,6 +99,10 @@ protected:
   Int_t trackID;
   Int_t process;
   Int_t originvol;
+
+  TVector3 originvtx;
+  Int_t parentid;
+  Int_t parentpdg;
 };
 
   } // namespace DS
