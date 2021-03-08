@@ -269,35 +269,41 @@ void simple_event_display(const char* filename, ULong64_t entry) {
       }
     }
   }
-  
-  
+ 
+  TFile *f = new TFile("evdisplay.root","RECREATE");  
   // Draw the histograms
-  TCanvas* c1= new TCanvas("c1", "Blabla", 0,0, 1200, 1000);
+  /*TCanvas* c1= new TCanvas("c1", "Blabla", 0,0, 1200, 1000);
   c1->Divide(2,3);
-  c1->cd(1);
+  c1->cd(1);*/
   h_TopView_sensor->SetXTitle("X [mm]");
   h_TopView_sensor->SetYTitle("Y [mm]");
-  h_TopView_sensor->DrawCopy("COLZ");
-  c1->cd(2);
+//  h_TopView_sensor->DrawCopy("COLZ");
+  //c1->cd(2);
   h_TopView_hits->SetXTitle("X [mm]");
   h_TopView_hits->SetYTitle("Y [mm]");
-  h_TopView_hits->DrawCopy("COLZ");
-  c1->cd(3);
+//  h_TopView_hits->DrawCopy("COLZ");
+  //c1->cd(3);
   h_BarrelView_sensor->SetXTitle("Phi [rad]");
   h_BarrelView_sensor->SetYTitle("Z [mm]");
-  h_BarrelView_sensor->DrawCopy("COLZ");
-  c1->cd(4);
+//  h_BarrelView_sensor->DrawCopy("COLZ");
+  //c1->cd(4);
   h_BarrelView_hits->SetXTitle("Phi [rad]");
   h_BarrelView_hits->SetYTitle("Z [mm]");
-  h_BarrelView_hits->DrawCopy("COLZ");
-  c1->cd(5);
+//  h_BarrelView_hits->DrawCopy("COLZ");
+  //c1->cd(5);
   h_BottomView_sensor->SetXTitle("X [mm]");
   h_BottomView_sensor->SetYTitle("Y [mm]");
-  h_BottomView_sensor->DrawCopy("COLZ");
-  c1->cd(6);
+//  h_BottomView_sensor->DrawCopy("COLZ");
+  //c1->cd(6);
   h_BottomView_hits->SetXTitle("X [mm]");
   h_BottomView_hits->SetYTitle("Y [mm]");
-  h_BottomView_hits->DrawCopy("COLZ");
+//  h_BottomView_hits->DrawCopy("COLZ");
+  h_TopView_sensor->Write();
+  h_TopView_hits->Write();
+  h_BarrelView_sensor->Write();
+  h_BarrelView_hits->Write();
+  h_BottomView_sensor->Write();
+  h_BottomView_hits->Write();
   
 //   TCanvas* c2= new TCanvas("c2", "Blabla2", 0,0, 1200, 1000);
 //   c2->Divide(2,4);
@@ -337,8 +343,11 @@ void simple_event_display(const char* filename, ULong64_t entry) {
   //   delete run, pmtInfo, lappdInfo;
   //   delete tri, runtri, branchDS;
   //   delete dsReader;
-  delete h_BarrelView_sensor; delete h_BarrelView_hits; delete h_TopView_sensor; delete h_TopView_hits; delete h_BottomView_sensor; delete h_BottomView_hits;
-  
+ 
+  //delete h_BarrelView_sensor; delete h_BarrelView_hits; delete h_TopView_sensor; delete h_TopView_hits; delete h_BottomView_sensor; delete h_BottomView_hits;
+  f->Close();
+  delete f;  
+
   // Ends the timer
   duration = ( clock() - start ) / (double) CLOCKS_PER_SEC;
   cout << "Execution time: " << duration << " seconds\n";

@@ -472,6 +472,7 @@ GLG4PMTOpticalModel::DoIt(const G4FastTrack& fastTrack, G4FastStep& fastStep)
 
     if (N_pe > 0) {
       if ( detector != NULL && detector->isActive() ) {
+        G4cout <<"detector full path name: "<<detector->GetFullPathName()<<", ipmt: "<<ipmt<<G4endl;
 	if (detector->GetFullPathName().contains("lappd")) {
           //G4cout <<"Creating simple Hit (LAPPD)"<<G4endl;
 	  ((GLG4PMTSD *)detector)->SimpleHit_LAPPD( ipmt,
