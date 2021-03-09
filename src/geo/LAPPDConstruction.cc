@@ -44,8 +44,8 @@ namespace RAT {
     // Construct inners
     const double vacuumWidth = fParams.width - fParams.glassThickness;
     const double vacuumThick = fParams.thick - fParams.glassThickness;
-//     G4Box* vacuum_solid = new G4Box( prefix + "_vacuum_solid", vacuumWidth, vacuumWidth, vacuumThick);
-    G4Trap* vacuum_solid = new G4Trap( prefix + "_vacuum_solid", 20, 50+vacuumWidth, 1000+vacuumThick, 50);
+    G4Box* vacuum_solid = new G4Box( prefix + "_vacuum_solid", vacuumWidth, vacuumWidth, vacuumThick);
+//     G4Trap* vacuum_solid = new G4Trap( prefix + "_vacuum_solid", 20, 50+vacuumWidth, 1000+vacuumThick, 50);
 
 //     if (fParams.constructHousing) {
 //       const double housingThick = fParams.thick + 2.*fParams.windowThickness;
@@ -126,8 +126,8 @@ namespace RAT {
 
   
   G4VSolid* LAPPDConstruction::BuildSolid(const string &name) {
-//     G4Box* body = new G4Box(name, fParams.width, fParams.width, fParams.thick);
-    G4Box* body = new G4Box(name, 2000., fParams.width, fParams.thick);
+    G4Box* body = new G4Box(name, fParams.width, fParams.width, fParams.thick);
+//     G4Box* body = new G4Box(name, 2000., fParams.width, fParams.thick);
     return body;
   }
 
