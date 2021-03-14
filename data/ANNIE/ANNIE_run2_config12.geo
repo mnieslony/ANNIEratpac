@@ -102,58 +102,6 @@ position: [0.0, 0.0, 0.0],
 material: "polyethylene_black",
 color: [1.0, 0.5, 0.5, 0.1],
 // invisible: 0,
-drawstyle: "solid",
-}
-
-{
-name: "GEO",
-index: "optical_isolation_top",
-valid_begin: [0, 0],
-valid_end: [0, 0],
-mother: "detector",
-type: "tube",
-surface: "polyethylene_black",
-r_max: 1417.6,
-size_z: 0.5,
-position: [0.0, 0.0, 1704.8],
-material: "polyethylene_black",
-color: [1.0, 0.5, 0.5, 0.1],
-// invisible: 0,
-drawstyle: "solid",
-}
-
-{
-name: "GEO",
-index: "optical_isolation_bottom",
-valid_begin: [0, 0],
-valid_end: [0, 0],
-mother: "detector",
-type: "tube",
-surface: "polyethylene_black",
-r_max: 1417.6,
-size_z: 0.5,
-position: [0.0, 0.0, -1704.8],
-material: "polyethylene_black",
-color: [1.0, 0.5, 0.5, 0.1],
-// invisible: 0,
-drawstyle: "solid",
-}
-
-{
-name: "GEO",
-index: "optical_isolation_barrel",
-valid_begin: [0, 0],
-valid_end: [0, 0],
-mother: "detector",
-type: "tube",
-surface: "polyethylene_black",
-r_max: 1417.6,
-r_min: 1416.6,
-size_z: 1704.8,
-position: [0.0, 0.0, 0.0],
-material: "polyethylene_black",
-color: [1.0, 0.5, 0.5, 0.1],
-// invisible: 0,
 drawsyle: "solid",
 }
 
